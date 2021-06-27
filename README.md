@@ -1,1 +1,0 @@
-Manfredini-Static-Site

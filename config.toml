@@ -1,5 +1,5 @@
-baseURL = "https://manfredini-site.onrender.com/"
-title = "Manfre Notes"
+baseURL = "https://www.manfredini.net.br/"
+title = "ManfreDocs"
 #themesDir = "../.."
 theme = "m10c"
 paginate = 10
@@ -25,6 +25,7 @@ paginate = 10
   author = "Leo Manfredini"
   description = "Anotações do dia-a-dia"
   menu_item_separator = " - "
+  avatar = "leo.jpg"
   [[params.social]]
     icon = "github"
     name = "Github"
