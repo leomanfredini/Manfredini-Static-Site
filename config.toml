@@ -26,7 +26,7 @@ paginate = 10
   author = "Leo Manfredini"
   description = "Anotações do dia-a-dia"
   menu_item_separator = " - "
-  #avatar = "avatar_leo.jpg"
+  avatar = "avatar_leo.jpg"
   [[params.social]]
     icon = "github"
     name = "Github"
