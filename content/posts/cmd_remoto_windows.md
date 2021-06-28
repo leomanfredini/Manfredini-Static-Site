@@ -1,7 +1,7 @@
 ---
 title: "Executar um prompt administrativo em uma estação Windows remota"
 date: 2021-06-27T20:30:44-03:00
-draft: true
+draft: false
 tags: ["windows"]
 ---
 

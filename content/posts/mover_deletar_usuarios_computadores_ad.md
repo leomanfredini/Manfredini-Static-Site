@@ -1,7 +1,7 @@
 ---
 title: "Mover ou deletar computadores e usuários inativos do AD"
 date: 2021-06-27T20:27:34-03:00
-draft: true
+draft: false
 tags: ["ad", "windows"]
 ---
 
