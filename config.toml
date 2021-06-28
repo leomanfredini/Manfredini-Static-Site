@@ -24,7 +24,7 @@ paginate = 10
 
 [params]
   author = "Leo Manfredini"
-  description = "Anotações do dia-a-dia"
+  description = "Anotações do dia a dia"
   menu_item_separator = " - "
   avatar = "avatar_leo.jpg"
   [[params.social]]
