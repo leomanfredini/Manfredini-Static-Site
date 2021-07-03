@@ -5,7 +5,7 @@ draft: false
 tags: ["opensource"]
 ---
 
-Lista composta de Soluções em software livre e de código aberto para as mais diversas finalidades e aplicações  
+Lista composta de soluções em software livre e de código aberto para as mais diversas finalidades e aplicações  
 _Atualizada em 3/07/2021_
 
 
