@@ -5,21 +5,19 @@ draft: false
 tags: ["windows"]
 ---
 
-Dica rápida para acessar CMD remotamente usando a solução do UAC de administrador.
+ Dica rápida para acessar CMD remotamente usando a solução do UAC de administrador.
 
 <!--more-->
 
 
-Para esta tarefa, precisamos do programa PSEXEC (disponível na suite PSTOOLS / link ao final do post). 
+Para esta tarefa, precisamos do programa PSEXEC (disponível na suite PSTOOLS / [download aqui](https://docs.microsoft.com/pt-br/sysinternals/downloads/psexec)). 
 
 Com o CMD aberto no diretório onde se encontra `psexec.exe` vamos executar o seguinte comando:
 
 ```html
 psexec \\172.16.1.11 -s cmd
 ```
+
 No exemplo acima, assume-se que vamos conectar no computador remoto de endereço ip `172.16.1.11`.
 
 A opção **-s** é para logar-se como `user system`
-
-
-https://docs.microsoft.com/pt-br/sysinternals/downloads/psexec
