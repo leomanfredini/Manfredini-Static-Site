@@ -2,7 +2,7 @@
 title: "Mover ou deletar computadores e usuários inativos do AD"
 date: 2021-06-27T20:27:34-03:00
 draft: false
-tags: ["ad", "windows"]
+tags: ["AD", "Windows"]
 ---
 
 Dicas rápidas para gerenciar usuários e computadores inativos no Windows Active Directory
@@ -12,7 +12,7 @@ Dicas rápidas para gerenciar usuários e computadores inativos no Windows Activ
 ## Mover Computadores Inativos
 Rodar o comando abaixo em um prompt com permissões de admin para mover os computadores inativos por mais de 10 semanas para a OU `InativosComp`
 
-```html
+```cmd
 for /f "Tokens=*" %s in ('dsquery computer -inactive 10 -limit 200') do dsmove %s -newparent "OU=InativosComp,DC=dominio,DC=local" 
 ```
 
@@ -20,7 +20,7 @@ for /f "Tokens=*" %s in ('dsquery computer -inactive 10 -limit 200') do dsmove %
 ## Mover Usuários Desabilitados
 Rodar o comando abaixo em um prompt com permissões de admin para mover os as contas de usuário desabilitadas para a OU `InativosUsuarios`
 
-```html
+```cmd
 for /f "Tokens=*" %s in ('dsquery user -disabled -limit 200') do dsmove %s -newparent "OU=InativosUsuarios,DC=dominio,DC=local" 
 ```
 
@@ -28,7 +28,7 @@ for /f "Tokens=*" %s in ('dsquery user -disabled -limit 200') do dsmove %s -newp
 ## Deletar Computadores Inativos
 Rodar o comando abaixo em um prompt com permissões de admin para deletar as contas de computadores inativos por mais de 10 semanas
 
-```html
+```cmd
 dsquery computer -inactive 10 | dsrm -subtree -noprompt -c > c:\teste.txt
 ```
 

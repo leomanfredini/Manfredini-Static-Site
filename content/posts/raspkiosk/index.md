@@ -58,7 +58,7 @@ Criar o arquivo para o script
 
 	$ nano /home/pi/kiosk.sh
 
-Copiar o conteúdo do arquivo *kiosk.sh* disponível neste repositório
+Copiar o conteúdo do arquivo *kiosk.sh* disponível no repositório do Github
 
 #### 7. CRIANDO O SERVIÇO PARA INICIAR O SCRIPT NO BOOT
 
@@ -66,7 +66,7 @@ Criar o arquivo para o script
 
 	$ sudo nano /lib/systemd/system/kiosk.service
 
-Copiar o conteúdo do arquivo *kiosk.service* disponível neste repositório
+Copiar o conteúdo do arquivo *kiosk.service* disponível no repositório do Github
 
 #### 8. HABILITAR O SCRIPT NA INICIALIZAÇÃO
 
