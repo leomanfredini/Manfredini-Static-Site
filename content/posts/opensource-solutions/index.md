@@ -8,16 +8,28 @@ tags: ["opensource"]
 Lista composta de soluções em software livre e de código aberto para as mais diversas finalidades e aplicações  
 _Atualizada em 3/07/2021_
 
+------------
+### Backup
+- Duplicati - https://www.duplicati.com/
+------------
 
-## Backup
-- Duplicati - www.duplicati.com
+### Videoconferência e Chat
+- Jitsi - https://jitsi.org/
+- MatterMost - https://mattermost.com/
+- RocketChat - https://docs.rocket.chat/installing-and-updating/docker-containers/docker-compose
+------------
 
+### Gerenciadores de Senhas
+- Passbolt - https://www.passbolt.com/
+- Teampass - https://teampass.net/
+------------
 
-## Chat
-- MatterMost - www.mattermost.com
-- RocketChat - https://docs.rocket.chat/installation/docker-containers/docker-compose
+### Monitoramento de Ativos
+- Netdata - https://github.com/netdata/netdata
+- Observium - https://www.observium.org/
+- Zabbix - https://www.zabbix.com/
+------------
 
-
-## Senhas
-- Passbolt - www.passbolt.com
-- Teampass - www.teampass.net
+### Repositório de Artefatos
+- Nexus Repository OSS - https://www.sonatype.com/products/repository-oss-download
+------------
