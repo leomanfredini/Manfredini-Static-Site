@@ -86,5 +86,3 @@ Seguindo os passos anteriores, o script já fica habilitado para iniciar no *Kio
 ##### 9.2 Comando para finalizar manualmente o Kiosk Mode
 
 	$ sudo systemctl stop kiosk.service
-
-
