@@ -1,6 +1,6 @@
 ---
 title: "Raspkiosk - Modo quiosque no Raspberry Pi"
-date: 2021-07-03T15:53:49-03:00
+date: 2021-09-16T15:53:49-03:00
 draft: false
 tags: ["Linux","RaspberryPi"]
 ---
@@ -17,7 +17,7 @@ O *Kiosk Mode* (ou Modo Quiosque) é um recurso utilizado em totens de auto aten
 
 ------------
 
-
+### MÉTODO 1 - INSTALAÇÃO MANUAL
 
 #### 1. REMOVER PACOTES DESNECESSÁRIOS
 
@@ -73,7 +73,6 @@ Copiar o conteúdo do arquivo *kiosk.service* disponível no repositório do Git
 	$ sudo systemctl enable kiosk.service
 
 
-------------
 #### 9. USO
 
 Seguindo os passos anteriores, o script já fica habilitado para iniciar no *Kiosk Mode* sempre que o sistema for iniciado. Para efetuar qualquer interação manualmente, utilize os seguintes comandos:
@@ -86,3 +85,13 @@ Seguindo os passos anteriores, o script já fica habilitado para iniciar no *Kio
 ##### 9.2 Comando para finalizar manualmente o Kiosk Mode
 
 	$ sudo systemctl stop kiosk.service
+
+------------
+
+### MÉTODO 2 - INSTALAÇÃO AUTOMÁTICA VIA SCRIPT
+
+Em um terminal, executar o seguinte comando:
+
+	$ sudo wget -qO - https://raw.githubusercontent.com/leomanfredini/raspkiosk/master/install.sh | bash
+
+Na sequência, editar o arquivo _/home/pi/kiosk.sh_ personalizando o final da linha 23 com as URLs desejadas para exibição.
