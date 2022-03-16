@@ -37,15 +37,12 @@ _Atualizada em 4/07/2021_
 
 ### Monitoramento de Ativos
 
+- Cabot - https://cabotapp.com/
 - Netdata - https://github.com/netdata/netdata
 - Observium - https://www.observium.org/
 - Zabbix - https://www.zabbix.com/
 ------------
 
-### Repositório de Artefatos
-
-- Nexus Repository OSS - https://www.sonatype.com/products/repository-oss-download
-------------
 
 ### VPN
 
