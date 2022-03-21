@@ -6,7 +6,7 @@ tags: ["Opensource"]
 ---
 
 Lista composta de soluções em software livre e de código aberto para as mais diversas finalidades e aplicações  
-_Atualizada em 4/07/2021_
+_Atualizada em 21/03/2022_
 
 ------------
 ### Backup e Cloud
