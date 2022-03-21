@@ -35,6 +35,12 @@ _Atualizada em 4/07/2021_
 - Teampass - https://teampass.net/
 ------------
 
+### Gerenciadores de Estações (Lab. Educacional)
+
+- Epoptes - https://epoptes.org/
+- Veyon - https://veyon.io/
+------------
+
 ### Monitoramento de Ativos
 
 - Cabot - https://cabotapp.com/
