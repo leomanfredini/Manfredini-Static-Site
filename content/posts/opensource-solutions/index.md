@@ -29,16 +29,21 @@ _Atualizada em 21/03/2022_
 - RocketChat - https://docs.rocket.chat/installing-and-updating/docker-containers/docker-compose
 ------------
 
-### Gerenciadores de Senhas
-
-- Passbolt - https://www.passbolt.com/
-- Teampass - https://teampass.net/
-------------
-
 ### Gerenciadores de Estações (Lab. Educacional)
 
 - Epoptes - https://epoptes.org/
 - Veyon - https://veyon.io/
+------------
+
+### Gerenciadores de Logs
+
+- Graylog - https://www.graylog.org/products/open-source
+------------
+
+### Gerenciadores de Senhas
+
+- Passbolt - https://www.passbolt.com/
+- Teampass - https://teampass.net/
 ------------
 
 ### Monitoramento de Ativos
