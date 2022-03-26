@@ -6,7 +6,7 @@ tags: ["Opensource"]
 ---
 
 Lista composta de soluções em software livre e de código aberto para as mais diversas finalidades e aplicações  
-_Atualizada em 21/03/2022_
+_Atualizada em 26/03/2022_
 
 ------------
 ### Backup e Cloud
@@ -27,6 +27,11 @@ _Atualizada em 21/03/2022_
 - MatterMost - https://mattermost.org/
 - Mibew - https://mibew.org/
 - RocketChat - https://docs.rocket.chat/installing-and-updating/docker-containers/docker-compose
+------------
+
+### Containers
+
+- Kasm (Streaming de Desktop) - https://kasmweb.com/
 ------------
 
 ### Gerenciadores de Estações (Lab. Educacional)
