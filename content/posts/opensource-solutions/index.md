@@ -6,7 +6,7 @@ tags: ["Opensource"]
 ---
 
 Lista composta de soluções em software livre e de código aberto para as mais diversas finalidades e aplicações  
-_Atualizada em 26/03/2022_
+_Atualizada em 05/05/2022_
 
 ------------
 ### Backup e Cloud
@@ -51,11 +51,12 @@ _Atualizada em 26/03/2022_
 - Teampass - https://teampass.net/
 ------------
 
-### Monitoramento de Ativos
+### Monitoramento de Ativos e Serviços
 
 - Cabot - https://cabotapp.com/
 - Netdata - https://github.com/netdata/netdata
 - Observium - https://www.observium.org/
+- Uptime Kuma - https://github.com/louislam/uptime-kuma
 - Zabbix - https://www.zabbix.com/
 ------------
 
