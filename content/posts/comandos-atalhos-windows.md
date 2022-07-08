@@ -15,10 +15,8 @@ ____
 #### Comandos
 
 - **`sysdm.cpl`** : Propriedades do Sistema  
-- **`ncpa.cpl`** : Conexões de rede  
-- **`control netconnections`** : Conexões de rede  
+- **`ncpa.cpl`** : Conexões de rede   
 - **`appwiz.cpl`** : Adicionar e remover programas  
-- **`control admintools`** : Ferramentas administivas  
 - **`netplwiz`** : Painel contas de usuário  
 - **`certmgr.msc`** : Gerenciador de certificados  
 - **`dcomcnfg`** : Serviços de componentes (Visualizador de eventos e serviços)  
@@ -29,6 +27,11 @@ ____
 - **`diskmgmt.msc`** : Gerenciamento de disco  
 - **`eventvwr.msc`** : Visualizados de eventos  
 - **`firewall.cpl`** : Painel de controle do firewall  
+- **`control userpasswords2`** : Contas de Usuário  
+- **`control netconnections`** : Conexões de rede 
+- **`control admintools`** : Ferramentas administivas  
+- **`control printers`** : Dispositivos e impressoras  
+
 
 ____
 
