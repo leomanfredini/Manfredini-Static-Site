@@ -6,7 +6,7 @@ tags: ["Opensource"]
 ---
 
 Lista composta de soluções em software livre e de código aberto para as mais diversas finalidades e aplicações  
-_Atualizada em 05/05/2022_
+_Atualizada em 08/07/2022_
 
 ------------
 ### Backup e Cloud
@@ -54,6 +54,7 @@ _Atualizada em 05/05/2022_
 ### Monitoramento de Ativos e Serviços
 
 - Cabot - https://cabotapp.com/
+- Monitorix - https://www.monitorix.org/
 - Netdata - https://github.com/netdata/netdata
 - Observium - https://www.observium.org/
 - Uptime Kuma - https://github.com/louislam/uptime-kuma
