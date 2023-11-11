@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RaspberryPi on ManfreDocs</title>
+    <link>https://www.manfredini.net.br/tags/raspberrypi/</link>
+    <description>Recent content in RaspberryPi on ManfreDocs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 16 Sep 2021 15:53:49 -0300</lastBuildDate><atom:link href="https://www.manfredini.net.br/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raspkiosk - Modo quiosque no Raspberry Pi</title>
+      <link>https://www.manfredini.net.br/posts/raspkiosk/</link>
+      <pubDate>Thu, 16 Sep 2021 15:53:49 -0300</pubDate>
+      
+      <guid>https://www.manfredini.net.br/posts/raspkiosk/</guid>
+      <description>Kiosk Mode no Raspberry Pi usando a distribuição Raspbian
+O Kiosk Mode (ou Modo Quiosque) é um recurso utilizado em totens de auto atendimento e painéis informativos, onde há a necessidade de disponibilizar ao usuário somente um navegador de internet com uma ou mais páginas específicas, ocultando todos os outros atalhos disponíveis do sistema operacional.
+Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 11th 2021 Download: https://www.raspberrypi.org/software/operating-systems/ Repositório com os arquivos necessários: https://github.</description>
+    </item>
+    
+  </channel>
+</rss>

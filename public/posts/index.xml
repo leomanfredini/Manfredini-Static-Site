@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on ManfreDocs</title>
+    <link>https://www.manfredini.net.br/posts/</link>
+    <description>Recent content in Posts on ManfreDocs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 02 Oct 2021 21:29:05 -0300</lastBuildDate><atom:link href="https://www.manfredini.net.br/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DHCP Snooping - Proteção contra servidores DHCP não autorizados</title>
+      <link>https://www.manfredini.net.br/posts/dhcp-snooping/</link>
+      <pubDate>Sat, 02 Oct 2021 21:29:05 -0300</pubDate>
+      
+      <guid>https://www.manfredini.net.br/posts/dhcp-snooping/</guid>
+      <description>Um servidor DHCP não autorizado na rede pode ocasionar diversos incidentes, desde indisponibilidade e até a falha no acesso a serviços internos e externos. Outra situação mais preocupante são os ataques do tipo DHCP Spoofing, onde os clientes recebem os parâmetros IP de um servidor DHCP manipulado, direcionando-os a um gateway preparado para interceptar o tráfego de rede ou até mesmo entregando parâmetros de DNS que direcionem a servidores manipulados para resolverem endereços de sites legítimos para servidores maliciosos.</description>
+    </item>
+    
+    <item>
+      <title>Raspkiosk - Modo quiosque no Raspberry Pi</title>
+      <link>https://www.manfredini.net.br/posts/raspkiosk/</link>
+      <pubDate>Thu, 16 Sep 2021 15:53:49 -0300</pubDate>
+      
+      <guid>https://www.manfredini.net.br/posts/raspkiosk/</guid>
+      <description>Kiosk Mode no Raspberry Pi usando a distribuição Raspbian
+O Kiosk Mode (ou Modo Quiosque) é um recurso utilizado em totens de auto atendimento e painéis informativos, onde há a necessidade de disponibilizar ao usuário somente um navegador de internet com uma ou mais páginas específicas, ocultando todos os outros atalhos disponíveis do sistema operacional.
+Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 11th 2021 Download: https://www.raspberrypi.org/software/operating-systems/ Repositório com os arquivos necessários: https://github.</description>
+    </item>
+    
+    <item>
+      <title>Comandos e atalhos do Windows</title>
+      <link>https://www.manfredini.net.br/posts/comandos-atalhos-windows/</link>
+      <pubDate>Thu, 16 Sep 2021 10:22:16 -0300</pubDate>
+      
+      <guid>https://www.manfredini.net.br/posts/comandos-atalhos-windows/</guid>
+      <description>&lt;p&gt;Lista com alguns comandos e atalhos do Windows.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lista de sistemas opensource e software livre</title>
+      <link>https://www.manfredini.net.br/posts/opensource-solutions/</link>
+      <pubDate>Sat, 03 Jul 2021 15:26:13 -0300</pubDate>
+      
+      <guid>https://www.manfredini.net.br/posts/opensource-solutions/</guid>
+      <description>Lista composta de soluções em software livre e de código aberto para as mais diversas finalidades e aplicações
+Atualizada em 08/07/2022
+Backup e Cloud Bacula - https://www.bacula.org/ Bareos - https://www.bareos.com/ Duplicati - https://www.duplicati.com/ FuguHub - https://fuguhub.com/ Nextcloud - https://nextcloud.com/ ownCloud - https://owncloud.com/ Syncthing - https://syncthing.net/ UrBackup - https://www.urbackup.org/ Chat e Videoconferência Jitsi - https://jitsi.org/ MatterMost - https://mattermost.org/ Mibew - https://mibew.org/ RocketChat - https://docs.rocket.chat/installing-and-updating/docker-containers/docker-compose Containers Kasm (Streaming de Desktop) - https://kasmweb.com/ Gerenciadores de Estações (Lab.</description>
+    </item>
+    
+    <item>
+      <title>Erro 0x80070534 ao executar tarefa agendada no Windows</title>
+      <link>https://www.manfredini.net.br/posts/erro-0x80070534/</link>
+      <pubDate>Thu, 01 Jul 2021 22:07:25 -0300</pubDate>
+      
+      <guid>https://www.manfredini.net.br/posts/erro-0x80070534/</guid>
+      <description>Problema: Erro 0x80070534 exibido nos logs do Windows ao tentar executar uma tarefa agendada que exige permissões administrativas.
+Solução: Configurar a tarefa para executar com o usuário NT AUTHORITY\System, conforme imagem a seguir:</description>
+    </item>
+    
+    <item>
+      <title>Executar um prompt administrativo em uma estação Windows remota</title>
+      <link>https://www.manfredini.net.br/posts/cmd_remoto_windows/</link>
+      <pubDate>Sun, 27 Jun 2021 20:30:44 -0300</pubDate>
+      
+      <guid>https://www.manfredini.net.br/posts/cmd_remoto_windows/</guid>
+      <description>&lt;p&gt;Dica rápida para acessar CMD remotamente usando a solução do UAC de administrador.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mover ou deletar computadores e usuários inativos do AD</title>
+      <link>https://www.manfredini.net.br/posts/mover_deletar_usuarios_computadores_ad/</link>
+      <pubDate>Sun, 27 Jun 2021 20:27:34 -0300</pubDate>
+      
+      <guid>https://www.manfredini.net.br/posts/mover_deletar_usuarios_computadores_ad/</guid>
+      <description>&lt;p&gt;Dicas rápidas para gerenciar usuários e computadores inativos no Windows Active Directory&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

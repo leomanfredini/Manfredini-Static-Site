@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on ManfreDocs</title>
+    <link>https://www.manfredini.net.br/tags/</link>
+    <description>Recent content in Tags on ManfreDocs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 02 Oct 2021 21:29:05 -0300</lastBuildDate><atom:link href="https://www.manfredini.net.br/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Redes</title>
+      <link>https://www.manfredini.net.br/tags/redes/</link>
+      <pubDate>Sat, 02 Oct 2021 21:29:05 -0300</pubDate>
+      
+      <guid>https://www.manfredini.net.br/tags/redes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Segurança</title>
+      <link>https://www.manfredini.net.br/tags/seguran%C3%A7a/</link>
+      <pubDate>Sat, 02 Oct 2021 21:29:05 -0300</pubDate>
+      
+      <guid>https://www.manfredini.net.br/tags/seguran%C3%A7a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://www.manfredini.net.br/tags/linux/</link>
+      <pubDate>Thu, 16 Sep 2021 15:53:49 -0300</pubDate>
+      
+      <guid>https://www.manfredini.net.br/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RaspberryPi</title>
+      <link>https://www.manfredini.net.br/tags/raspberrypi/</link>
+      <pubDate>Thu, 16 Sep 2021 15:53:49 -0300</pubDate>
+      
+      <guid>https://www.manfredini.net.br/tags/raspberrypi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://www.manfredini.net.br/tags/windows/</link>
+      <pubDate>Thu, 16 Sep 2021 10:22:16 -0300</pubDate>
+      
+      <guid>https://www.manfredini.net.br/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Opensource</title>
+      <link>https://www.manfredini.net.br/tags/opensource/</link>
+      <pubDate>Sat, 03 Jul 2021 15:26:13 -0300</pubDate>
+      
+      <guid>https://www.manfredini.net.br/tags/opensource/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AD</title>
+      <link>https://www.manfredini.net.br/tags/ad/</link>
+      <pubDate>Thu, 01 Jul 2021 22:07:25 -0300</pubDate>
+      
+      <guid>https://www.manfredini.net.br/tags/ad/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

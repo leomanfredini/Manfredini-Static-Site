@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Opensource on ManfreDocs</title>
+    <link>https://www.manfredini.net.br/tags/opensource/</link>
+    <description>Recent content in Opensource on ManfreDocs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 03 Jul 2021 15:26:13 -0300</lastBuildDate><atom:link href="https://www.manfredini.net.br/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lista de sistemas opensource e software livre</title>
+      <link>https://www.manfredini.net.br/posts/opensource-solutions/</link>
+      <pubDate>Sat, 03 Jul 2021 15:26:13 -0300</pubDate>
+      
+      <guid>https://www.manfredini.net.br/posts/opensource-solutions/</guid>
+      <description>Lista composta de soluções em software livre e de código aberto para as mais diversas finalidades e aplicações
+Atualizada em 08/07/2022
+Backup e Cloud Bacula - https://www.bacula.org/ Bareos - https://www.bareos.com/ Duplicati - https://www.duplicati.com/ FuguHub - https://fuguhub.com/ Nextcloud - https://nextcloud.com/ ownCloud - https://owncloud.com/ Syncthing - https://syncthing.net/ UrBackup - https://www.urbackup.org/ Chat e Videoconferência Jitsi - https://jitsi.org/ MatterMost - https://mattermost.org/ Mibew - https://mibew.org/ RocketChat - https://docs.rocket.chat/installing-and-updating/docker-containers/docker-compose Containers Kasm (Streaming de Desktop) - https://kasmweb.com/ Gerenciadores de Estações (Lab.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -14,9 +14,8 @@ Para esta tarefa, precisamos do programa PSEXEC (disponível na suite PSTOOLS / 
 
 Com o CMD aberto no diretório onde se encontra `psexec.exe` vamos executar o seguinte comando:
 
-```html
-psexec \\172.16.1.11 -s cmd
-```
+
+    psexec \\172.16.1.11 -s cmd
 
 No exemplo acima, assume-se que vamos conectar no computador remoto de endereço ip `172.16.1.11`.
 

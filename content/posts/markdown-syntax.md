@@ -5,6 +5,10 @@ description = "Markdown Syntax test page"
 draft = true
 +++
 
+
+https://www.markdownguide.org/basic-syntax/  
+https://www.markdownguide.org/cheat-sheet/
+
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
 
 ## Headings
