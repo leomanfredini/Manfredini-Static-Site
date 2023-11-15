@@ -28,7 +28,7 @@ Nunca revele o conteúdo de sua chave privada e muito menos a distribua por aí,
 
 ---
 
-### 2 - Copiar a chave pública para a máquina destino (onde pretendemos conectar)
+### 2 - Copiar a chave pública para a máquina destino (servidor)
 
 A seguir, 3 métodos para copiar a chave pública para a máquina destino:
 
