@@ -1,8 +1,8 @@
 ---
 title: "Linux Commands Notepad"
-date: 2023-11-11T07:58:05-03:00
+date: 2023-11-12T21:38:35-03:00
 draft: false
-tags: ["linux"]
+tags: ["Linux"]
 ---
 
 ### Compilação de comandos destinados a uma finalidade específica.
@@ -18,4 +18,3 @@ No exemplo abaixo, será executada uma busca pela sentença **apache** em todos 
 
 
 ------------
-
