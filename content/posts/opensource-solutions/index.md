@@ -6,7 +6,7 @@ tags: ["Opensource"]
 ---
 
 Lista composta de soluções em software livre e de código aberto para as mais diversas finalidades e aplicações  
-_Atualizada em 24/08/2023_
+_Atualizada em 16/04/2024_
 
 ------------
 ### Backup e Cloud
@@ -54,11 +54,29 @@ _Atualizada em 24/08/2023_
 ### Monitoramento de Ativos e Serviços
 
 - Cabot - https://cabotapp.com/
+- Gatus - https://github.com/TwiN/gatus/
 - Monitorix - https://www.monitorix.org/
 - Netdata - https://github.com/netdata/netdata
 - Observium - https://www.observium.org/
+- Statping-ng - https://statping-ng.github.io
 - Uptime Kuma - https://github.com/louislam/uptime-kuma
 - Zabbix - https://www.zabbix.com/
+------------
+
+### Personal Dashboards
+
+- Dashy - https://github.com/lissy93/dashy/
+- Heimdall - https://heimdall.site/
+- Homarr - https://homarr.dev/
+- Homer - https://github.com/bastienwirtz/homer/
+- Homepage - https://github.com/tomershvueli/homepage/
+- Jump - https://github.com/daledavies/jump/
+- LinkStack - https://linkstack.org/
+- LittleLink - https://github.com/sethcottle/littlelink/
+- Organizr - https://github.com/causefx/Organizr/
+- ryot - https://github.com/ignisda/ryot/
+- Starbase 80 - ttps://github.com/notclickable-jordan/starbase-80/
+- Web-Portal - https://github.com/enchant97/web-portal/
 ------------
 
 ### Screencast
@@ -69,6 +87,9 @@ _Atualizada em 24/08/2023_
 
 ### VPN
 
+- DockOvpn - https://dockovpn.io/
+- Firezone - https://www.firezone.dev/
+- sshuttle - https://github.com/sshuttle/sshuttle/
 - Wireguard - https://www.wireguard.com/
 ------------
 
@@ -78,4 +99,5 @@ _Atualizada em 24/08/2023_
 - Foswiki - https://foswiki.org/
 - MediaWiki - https://www.mediawiki.org/
 - MoinMoin - https://moinmo.in/
+- Tiki - https://tiki.org/
 ------------
