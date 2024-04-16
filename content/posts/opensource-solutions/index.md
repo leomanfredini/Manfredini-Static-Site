@@ -75,7 +75,7 @@ _Atualizada em 16/04/2024_
 - LittleLink - https://github.com/sethcottle/littlelink/
 - Organizr - https://github.com/causefx/Organizr/
 - ryot - https://github.com/ignisda/ryot/
-- Starbase 80 - ttps://github.com/notclickable-jordan/starbase-80/
+- Starbase 80 - https://github.com/notclickable-jordan/starbase-80/
 - Web-Portal - https://github.com/enchant97/web-portal/
 ------------
 
