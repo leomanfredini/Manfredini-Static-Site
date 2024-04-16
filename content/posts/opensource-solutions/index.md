@@ -8,8 +8,22 @@ tags: ["Opensource"]
 Lista composta de soluções em software livre e de código aberto para as mais diversas finalidades e aplicações  
 _Atualizada em 16/04/2024_
 
+## CATEGORIAS
+
+- [Backup e Cloud](#backup)
+- [Chat e Videoconferência](#chat_videoconferencia)
+- [Containers](#containers)
+- [Gerenciadores de Estações (Lab. Educacional)](#gerenciadores_estacoes)
+- [Gerenciadores de Logs](#gerenciadores_logs)
+- [Gerenciadores de Senhas](#gerenciadores_senhas)
+- [Monitoramento de Ativos e Serviços](#monitoramento_ativos_serviços)
+- [Personal Dashboards](#personal_dashboards)
+- [Screencast](#screencast)
+- [VPN](#vpn)
+- [Wiki](#wiki)
+
 ------------
-### Backup e Cloud
+### Backup e Cloud {#backup}
 
 - Bacula - https://www.bacula.org/
 - Bareos - https://www.bareos.com/
@@ -21,7 +35,7 @@ _Atualizada em 16/04/2024_
 - UrBackup - https://www.urbackup.org/
 ------------
 
-### Chat e Videoconferência
+### Chat e Videoconferência {#chat_videoconferencia}
 
 - Jitsi - https://jitsi.org/
 - MatterMost - https://mattermost.org/
@@ -29,29 +43,29 @@ _Atualizada em 16/04/2024_
 - RocketChat - https://docs.rocket.chat/installing-and-updating/docker-containers/docker-compose
 ------------
 
-### Containers
+### Containers {#containers}
 
 - Kasm (Streaming de Desktop) - https://kasmweb.com/
 ------------
 
-### Gerenciadores de Estações (Lab. Educacional)
+### Gerenciadores de Estações (Lab. Educacional) {#gerenciadores_estacoes}
 
 - Epoptes - https://epoptes.org/
 - Veyon - https://veyon.io/
 ------------
 
-### Gerenciadores de Logs
+### Gerenciadores de Logs {#gerenciadores_logs}
 
 - Graylog - https://www.graylog.org/products/open-source
 ------------
 
-### Gerenciadores de Senhas
+### Gerenciadores de Senhas {#gerenciadores_senhas}
 
 - Passbolt - https://www.passbolt.com/
 - Teampass - https://teampass.net/
 ------------
 
-### Monitoramento de Ativos e Serviços
+### Monitoramento de Ativos e Serviços {#monitoramento_ativos_serviços}
 
 - Cabot - https://cabotapp.com/
 - Gatus - https://github.com/TwiN/gatus/
@@ -63,7 +77,7 @@ _Atualizada em 16/04/2024_
 - Zabbix - https://www.zabbix.com/
 ------------
 
-### Personal Dashboards
+### Personal Dashboards {#personal_dashboards}
 
 - Dashy - https://github.com/lissy93/dashy/
 - Heimdall - https://heimdall.site/
@@ -79,13 +93,13 @@ _Atualizada em 16/04/2024_
 - Web-Portal - https://github.com/enchant97/web-portal/
 ------------
 
-### Screencast
+### Screencast {#screencast}
 
 - VokoscreenNG - https://github.com/vkohaupt/vokoscreenNG
 ------------
 
 
-### VPN
+### VPN {#vpn}
 
 - DockOvpn - https://dockovpn.io/
 - Firezone - https://www.firezone.dev/
@@ -93,7 +107,7 @@ _Atualizada em 16/04/2024_
 - Wireguard - https://www.wireguard.com/
 ------------
 
-### Wiki
+### Wiki {#wiki}
 
 - DocuWiki - https://www.dokuwiki.org/
 - Foswiki - https://foswiki.org/
