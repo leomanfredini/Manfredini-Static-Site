@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on ManfreDocs</title>
+    <link>http://localhost:1313/tags/docker/</link>
+    <description>Recent content in Docker on ManfreDocs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 13 Sep 2024 23:55:06 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalando Docker, Docker Compose e Portainer no Debian 12</title>
+      <link>http://localhost:1313/posts/docker-compose-portainer/</link>
+      <pubDate>Fri, 13 Sep 2024 23:55:06 -0300</pubDate>
+      <guid>http://localhost:1313/posts/docker-compose-portainer/</guid>
+      <description>&lt;p&gt;Docker é uma plataforma que utiliza contêineres para virtualização, permitindo o empacotamento, distribuição e execução de aplicações, juntamente com suas dependências, de forma isolada. Essa solução otimiza tanto o desenvolvimento quanto a implantação, ao criar ambientes homogêneos em diferentes sistemas, promovendo portabilidade e melhor uso dos recursos disponíveis. Cada contêiner é uma unidade leve e independente, possibilitando a execução consistente de aplicações em qualquer ambiente compatível com Docker.&lt;/p&gt;&#xA;&lt;p&gt;Já o Docker Compose é uma ferramenta voltada para a gestão de aplicações que dependem de múltiplos contêineres. Com ele, é possível definir e gerenciar essas configurações em um único arquivo, o que automatiza tanto a criação quanto a conexão entre os contêineres. Isso facilita o desenvolvimento e testes de sistemas mais complexos, garantindo a manutenção de ambientes replicáveis e consistentes.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

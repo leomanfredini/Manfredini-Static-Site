@@ -2,77 +2,109 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on ManfreDocs</title>
-    <link>https://www.manfredini.net.br/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on ManfreDocs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 02 Oct 2021 21:29:05 -0300</lastBuildDate><atom:link href="https://www.manfredini.net.br/posts/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 13 Sep 2024 23:55:06 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalando Docker, Docker Compose e Portainer no Debian 12</title>
+      <link>http://localhost:1313/posts/docker-compose-portainer/</link>
+      <pubDate>Fri, 13 Sep 2024 23:55:06 -0300</pubDate>
+      <guid>http://localhost:1313/posts/docker-compose-portainer/</guid>
+      <description>&lt;p&gt;Docker é uma plataforma que utiliza contêineres para virtualização, permitindo o empacotamento, distribuição e execução de aplicações, juntamente com suas dependências, de forma isolada. Essa solução otimiza tanto o desenvolvimento quanto a implantação, ao criar ambientes homogêneos em diferentes sistemas, promovendo portabilidade e melhor uso dos recursos disponíveis. Cada contêiner é uma unidade leve e independente, possibilitando a execução consistente de aplicações em qualquer ambiente compatível com Docker.&lt;/p&gt;&#xA;&lt;p&gt;Já o Docker Compose é uma ferramenta voltada para a gestão de aplicações que dependem de múltiplos contêineres. Com ele, é possível definir e gerenciar essas configurações em um único arquivo, o que automatiza tanto a criação quanto a conexão entre os contêineres. Isso facilita o desenvolvimento e testes de sistemas mais complexos, garantindo a manutenção de ambientes replicáveis e consistentes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SSH Sem Senha no Linux</title>
+      <link>http://localhost:1313/posts/ssh-sem-senha/</link>
+      <pubDate>Wed, 15 Nov 2023 09:06:21 -0300</pubDate>
+      <guid>http://localhost:1313/posts/ssh-sem-senha/</guid>
+      <description>&lt;p&gt;A autenticação segura em servidores remotos é facilitada pelo método de conexão SSH sem o uso de senhas. Abaixo, apresentamos os passos para configurar a conexão entre o cliente e o servidor.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;1---gerar-a-chave-pública-na-máquina-cliente&#34;&gt;1 - Gerar a chave pública na máquina cliente&lt;/h3&gt;&#xA;&lt;p&gt;Para gerar o par de chaves, execute o seguinte comando na máquina cliente:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;ssh-keygen -t rsa&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;A chave padrão é de 2048 bits. Caso precise de mais segurança basta, trocar o valor para 4096 bits. Neste caso o comando será:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linux Commands Notepad</title>
+      <link>http://localhost:1313/posts/linux-notepad/linux-notepad/</link>
+      <pubDate>Sun, 12 Nov 2023 21:38:35 -0300</pubDate>
+      <guid>http://localhost:1313/posts/linux-notepad/linux-notepad/</guid>
+      <description>&lt;h3 id=&#34;compilação-de-comandos-destinados-a-uma-finalidade-específica&#34;&gt;Compilação de comandos destinados a uma finalidade específica.&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;grep&#34;&gt;grep&lt;/h3&gt;&#xA;&lt;p&gt;Localizar conteúdos específicos dentro de arquivos sem a necessidade de abri-los.&lt;br&gt;&#xA;No exemplo abaixo, será executada uma busca pela sentença &lt;strong&gt;apache&lt;/strong&gt; em todos os arquivos do diretório &lt;code&gt;/etc&lt;/code&gt; apresentando uma listagem dos aquivos com esta sentença.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;$ grep -rli &#39;apache&#39; /etc/* &#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>Proxy Reverso, HTTPS e Load Balancer com Nginx no CentOS</title>
+      <link>http://localhost:1313/posts/nginx-reverse-balancer/</link>
+      <pubDate>Tue, 24 May 2022 21:26:26 -0300</pubDate>
+      <guid>http://localhost:1313/posts/nginx-reverse-balancer/</guid>
+      <description>&lt;p&gt;Usando o Nginx no Centos 7 para atuar como proxy reverso para serviços internos ou containers, load balancer para servidores de aplicação e servir conexões HTTPS através da utilização de certificados SSL fornecidos gratuitamente pela &lt;a href=&#34;https://letsencrypt.org/&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Bold&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Italic&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Leonardo Manfredini&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h4 id=&#34;habilitando-a-configuração-em-switches-dell&#34;&gt;HABILITANDO A CONFIGURAÇÃO EM SWITCHES DELL&lt;/h4&gt;&#xA;&lt;p&gt;Entrando em modo de configuração&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;console&amp;gt; enable&#xA;console# config&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Habilitando o DHCP snooping globalmente.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>DHCP Snooping - Proteção contra servidores DHCP não autorizados</title>
-      <link>https://www.manfredini.net.br/posts/dhcp-snooping/</link>
+      <link>http://localhost:1313/posts/dhcp-snooping/</link>
       <pubDate>Sat, 02 Oct 2021 21:29:05 -0300</pubDate>
-      
-      <guid>https://www.manfredini.net.br/posts/dhcp-snooping/</guid>
-      <description>Um servidor DHCP não autorizado na rede pode ocasionar diversos incidentes, desde indisponibilidade e até a falha no acesso a serviços internos e externos. Outra situação mais preocupante são os ataques do tipo DHCP Spoofing, onde os clientes recebem os parâmetros IP de um servidor DHCP manipulado, direcionando-os a um gateway preparado para interceptar o tráfego de rede ou até mesmo entregando parâmetros de DNS que direcionem a servidores manipulados para resolverem endereços de sites legítimos para servidores maliciosos.</description>
+      <guid>http://localhost:1313/posts/dhcp-snooping/</guid>
+      <description>&lt;p&gt;Um servidor DHCP não autorizado na rede pode ocasionar diversos incidentes, desde indisponibilidade e até a falha no acesso a serviços internos e externos. Outra situação mais preocupante são os ataques do tipo DHCP Spoofing, onde os clientes recebem os parâmetros IP de um servidor DHCP manipulado, direcionando-os a um gateway preparado para interceptar o tráfego de rede ou até mesmo entregando parâmetros de DNS que direcionem a servidores manipulados para resolverem endereços de sites legítimos para servidores maliciosos.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Raspkiosk - Modo quiosque no Raspberry Pi</title>
-      <link>https://www.manfredini.net.br/posts/raspkiosk/</link>
+      <link>http://localhost:1313/posts/raspkiosk/</link>
       <pubDate>Thu, 16 Sep 2021 15:53:49 -0300</pubDate>
-      
-      <guid>https://www.manfredini.net.br/posts/raspkiosk/</guid>
-      <description>Kiosk Mode no Raspberry Pi usando a distribuição Raspbian
-O Kiosk Mode (ou Modo Quiosque) é um recurso utilizado em totens de auto atendimento e painéis informativos, onde há a necessidade de disponibilizar ao usuário somente um navegador de internet com uma ou mais páginas específicas, ocultando todos os outros atalhos disponíveis do sistema operacional.
-Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 11th 2021 Download: https://www.raspberrypi.org/software/operating-systems/ Repositório com os arquivos necessários: https://github.</description>
+      <guid>http://localhost:1313/posts/raspkiosk/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Kiosk Mode no Raspberry Pi usando a distribuição Raspbian&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;O &lt;em&gt;Kiosk Mode&lt;/em&gt; (ou Modo Quiosque) é um recurso utilizado em totens de auto atendimento e painéis informativos, onde há a necessidade de disponibilizar ao usuário somente um navegador de internet com uma ou mais páginas específicas, ocultando todos os outros atalhos disponíveis do sistema operacional.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Distribuição utilizada:&lt;/strong&gt; Raspberry Pi OS with desktop - Release date: January 11th 2021&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Download:&lt;/strong&gt; &lt;a href=&#34;https://www.raspberrypi.org/software/operating-systems/&#34; title=&#34;https://www.raspberrypi.org/software/operating-systems/&#34;&gt;https://www.raspberrypi.org/software/operating-systems/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Repositório com os arquivos necessários:&lt;/strong&gt; &lt;a href=&#34;https://github.com/leomanfredini/raspkiosk&#34;&gt;https://github.com/leomanfredini/raspkiosk&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;método-1---instalação-manual&#34;&gt;MÉTODO 1 - INSTALAÇÃO MANUAL&lt;/h3&gt;&#xA;&lt;h4 id=&#34;1-remover-pacotes-desnecessários&#34;&gt;1. REMOVER PACOTES DESNECESSÁRIOS&lt;/h4&gt;&#xA;&lt;pre&gt;&lt;code&gt;$ sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y&#xA;$ sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y&#xA;&lt;/code&gt;&lt;/pr</description>
     </item>
-    
     <item>
       <title>Comandos e atalhos do Windows</title>
-      <link>https://www.manfredini.net.br/posts/comandos-atalhos-windows/</link>
+      <link>http://localhost:1313/posts/comandos-atalhos-windows/</link>
       <pubDate>Thu, 16 Sep 2021 10:22:16 -0300</pubDate>
-      
-      <guid>https://www.manfredini.net.br/posts/comandos-atalhos-windows/</guid>
+      <guid>http://localhost:1313/posts/comandos-atalhos-windows/</guid>
       <description>&lt;p&gt;Lista com alguns comandos e atalhos do Windows.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Lista de sistemas opensource e software livre</title>
-      <link>https://www.manfredini.net.br/posts/opensource-solutions/</link>
+      <link>http://localhost:1313/posts/opensource-solutions/</link>
       <pubDate>Sat, 03 Jul 2021 15:26:13 -0300</pubDate>
-      
-      <guid>https://www.manfredini.net.br/posts/opensource-solutions/</guid>
-      <description>Lista composta de soluções em software livre e de código aberto para as mais diversas finalidades e aplicações
-Atualizada em 08/07/2022
-Backup e Cloud Bacula - https://www.bacula.org/ Bareos - https://www.bareos.com/ Duplicati - https://www.duplicati.com/ FuguHub - https://fuguhub.com/ Nextcloud - https://nextcloud.com/ ownCloud - https://owncloud.com/ Syncthing - https://syncthing.net/ UrBackup - https://www.urbackup.org/ Chat e Videoconferência Jitsi - https://jitsi.org/ MatterMost - https://mattermost.org/ Mibew - https://mibew.org/ RocketChat - https://docs.rocket.chat/installing-and-updating/docker-containers/docker-compose Containers Kasm (Streaming de Desktop) - https://kasmweb.com/ Gerenciadores de Estações (Lab.</description>
+      <guid>http://localhost:1313/posts/opensource-solutions/</guid>
+      <description>&lt;p&gt;Lista composta de soluções em software livre e de código aberto para as mais diversas finalidades e aplicações&lt;br&gt;&#xA;&lt;em&gt;Atualizada em 16/04/2024&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;categorias&#34;&gt;CATEGORIAS&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#backup&#34;&gt;Backup e Cloud&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#chat_videoconferencia&#34;&gt;Chat e Videoconferência&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#containers&#34;&gt;Containers&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#gerenciadores_estacoes&#34;&gt;Gerenciadores de Estações (Lab. Educacional)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#gerenciadores_logs&#34;&gt;Gerenciadores de Logs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#gerenciadores_senhas&#34;&gt;Gerenciadores de Senhas&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#monitoramento_ativos_servi%C3%A7os&#34;&gt;Monitoramento de Ativos e Serviços&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#personal_dashboards&#34;&gt;Personal Dashboards&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#screencast&#34;&gt;Screencast&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#vpn&#34;&gt;VPN&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#wiki&#34;&gt;Wiki&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;backup&#34;&gt;Backup e Cloud&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Bacula - &lt;a href=&#34;https://www.bacula.org/&#34;&gt;https://www.bacula.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Bareos - &lt;a href=&#34;https://www.bareos.com/&#34;&gt;https://www.bareos.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Duplicati - &lt;a href=&#34;https://www.duplicati.com/&#34;&gt;https://www.duplicati.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;FuguHub - &lt;a href=&#34;https://fuguhub.com/&#34;&gt;https://fuguhub.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Nextcloud - &lt;a href=&#34;https://nextcloud.com/&#34;&gt;https://nextcloud.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;ownCloud - &lt;a href=&#34;https://owncloud.com/&#34;&gt;https://owncloud.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Syncthing - &lt;a href=&#34;https://syncthing.net/&#34;&gt;https://syncthing.net/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;UrBackup - &lt;a href=&#34;https://www.urbackup.org/&#34;&gt;https://www.urbackup.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;chat_videoconferencia&#34;&gt;Chat e Videoconferência&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Jitsi - &lt;a href=&#34;https://jitsi.org/&#34;&gt;https://jitsi.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;MatterMost - &lt;a href=&#34;https://mattermost.org/&#34;&gt;https://mattermost.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Mibew - &lt;a href=&#34;https://mibew.org/&#34;&gt;https://mibew.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;RocketChat - &lt;a href=&#34;https://docs.rocket.chat/installing-and-updating/docker-containers/docker-compose&#34;&gt;https://docs.rocket.chat/installing-and-updating/docker-containers/docker-compose&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;containers&#34;&gt;Containers&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Kasm (Streaming de Desktop) - &lt;a href=&#34;https://kasmweb.com/&#34;&gt;https://kasmweb.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;gerenciadores_estacoes&#34;&gt;Gerenciadores de Estações (Lab. Educacional)&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Epoptes - &lt;a href=&#34;https://epoptes.org/&#34;&gt;https://epoptes.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Veyon - &lt;a href=&#34;https://veyon.io/&#34;&gt;https://veyon.io/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;gerenciadores_logs&#34;&gt;Gerenciadores de Logs&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Graylog - &lt;a href=&#34;https://www.graylog.org/products/open-source&#34;&gt;https://www.graylog.org/products/open-source&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;gerenciadores_senhas&#34;&gt;Gerenciadores de Senhas&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Passbolt - &lt;a href=&#34;https://www.passbolt.com/&#34;&gt;https://www.passbolt.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Teampass - &lt;a href=&#34;https://teampass.net/&#34;&gt;https://teampass.net/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;monitoramento_ativos_serviços&#34;&gt;Monitoramento de Ativos e Serviços&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Cabot - &lt;a href=&#34;https://cabotapp.com/&#34;&gt;https://cabotapp.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Gatus - &lt;a href=&#34;https://github.com/TwiN/gatus/&#34;&gt;https://github.com/TwiN/gatus/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Monitorix - &lt;a href=&#34;https://www.monitorix.org/&#34;&gt;https://www.monitorix.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Netdata - &lt;a href=&#34;https://github.com/netdata/netdata&#34;&gt;https://github.com/netdata/netdata&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Observium - &lt;a href=&#34;https://www.observium.org/&#34;&gt;https://www.observium.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Statping-ng - &lt;a href=&#34;https://statping-ng.github.io&#34;&gt;https://statping-ng.github.io&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Uptime Kuma - &lt;a href=&#34;https://github.com/louislam/uptime-kuma&#34;&gt;https://github.com/louislam/uptime-kuma&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Zabbix - &lt;a href=&#34;https://www.zabbix.com/&#34;&gt;https://www.zabbix.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;personal_dashboards&#34;&gt;Personal Dashboards&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Dashy - &lt;a href=&#34;https://github.com/lissy93/dashy/&#34;&gt;https://github.com/lissy93/dashy/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Heimdall - &lt;a href=&#34;https://heimdall.site/&#34;&gt;https://heimdall.site/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Homarr - &lt;a href=&#34;https://homarr.dev/&#34;&gt;https://homarr.dev/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Homer - &lt;a href=&#34;https://github.com/bastienwirtz/homer/&#34;&gt;https://github.com/bastienwirtz/homer/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Homepage - &lt;a href=&#34;https://github.com/tomershvueli/homepage/&#34;&gt;https://github.com/tomershvueli/homepage/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Jump - &lt;a href=&#34;https://github.com/daledavies/jump/&#34;&gt;https://github.com/daledavies/jump/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;LinkStack - &lt;a href=&#34;https://linkstack.org/&#34;&gt;https://linkstack.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;LittleLink - &lt;a href=&#34;https://github.com/sethcottle/littlelink/&#34;&gt;https://github.com/sethcottle/littlelink/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Organizr - &lt;a href=&#34;https://github.com/causefx/Organizr/&#34;&gt;https://github.com/causefx/Organizr/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;ryot - &lt;a href=&#34;https://github.com/ignisda/ryot/&#34;&gt;https://github.com/ignisda/ryot/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Starbase 80 - &lt;a href=&#34;https://github.com/notclickable-jordan/starbase-80/&#34;&gt;https://github.com/notclickable-jordan/starbase-80/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Web-Portal - &lt;a href=&#34;https://github.com/enchant97/web-portal/&#34;&gt;https://github.com/enchant97/web-portal/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;screencast&#34;&gt;Screencast&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;VokoscreenNG - &lt;a href=&#34;https://github.com/vkohaupt/vokoscreenNG&#34;&gt;https://github.com/vkohaupt/vokoscreenNG&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;vpn&#34;&gt;VPN&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;DockOvpn - &lt;a href=&#34;https://dockovpn.io/&#34;&gt;https://dockovpn.io/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Firezone - &lt;a href=&#34;https://www.firezone.dev/&#34;&gt;https://www.firezone.dev/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;sshuttle - &lt;a href=&#34;https://github.com/sshuttle/sshuttle/&#34;&gt;https://github.com/sshuttle/sshuttle/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Wireguard - &lt;a href=&#34;https://www.wireguard.com/&#34;&gt;https://www.wireguard.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;wiki&#34;&gt;Wiki&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;DocuWiki - &lt;a href=&#34;https://www.dokuwiki.org/&#34;&gt;https://www.dokuwiki.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Foswiki - &lt;a href=&#34;https://foswiki.org/&#34;&gt;https://foswiki.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;MediaWiki - &lt;a href=&#34;https://www.mediawiki.org/&#34;&gt;https://www.mediawiki.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;MoinMoin - &lt;a href=&#34;https://moinmo.in/&#34;&gt;https://moinmo.in/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Tiki - &lt;a href=&#34;https://tiki.org/&#34;&gt;https://tiki.org/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;</description>
     </item>
-    
     <item>
       <title>Erro 0x80070534 ao executar tarefa agendada no Windows</title>
-      <link>https://www.manfredini.net.br/posts/erro-0x80070534/</link>
+      <link>http://localhost:1313/posts/erro-0x80070534/</link>
       <pubDate>Thu, 01 Jul 2021 22:07:25 -0300</pubDate>
-      
-      <guid>https://www.manfredini.net.br/posts/erro-0x80070534/</guid>
-      <description>Problema: Erro 0x80070534 exibido nos logs do Windows ao tentar executar uma tarefa agendada que exige permissões administrativas.
-Solução: Configurar a tarefa para executar com o usuário NT AUTHORITY\System, conforme imagem a seguir:</description>
+      <guid>http://localhost:1313/posts/erro-0x80070534/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Problema:&lt;/strong&gt; Erro 0x80070534 exibido nos logs do Windows ao tentar executar uma tarefa agendada que exige permissões administrativas.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Solução:&lt;/strong&gt; Configurar a tarefa para executar com o usuário &lt;strong&gt;&lt;code&gt;NT AUTHORITY\System&lt;/code&gt;&lt;/strong&gt;, conforme imagem a seguir:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/posts/erro-0x80070534/0x80070534.png&#34;&gt;&#xA;&lt;/figure&gt;</description>
     </item>
-    
     <item>
       <title>Executar um prompt administrativo em uma estação Windows remota</title>
-      <link>https://www.manfredini.net.br/posts/cmd_remoto_windows/</link>
+      <link>http://localhost:1313/posts/cmd_remoto_windows/</link>
       <pubDate>Sun, 27 Jun 2021 20:30:44 -0300</pubDate>
-      
-      <guid>https://www.manfredini.net.br/posts/cmd_remoto_windows/</guid>
+      <guid>http://localhost:1313/posts/cmd_remoto_windows/</guid>
       <description>&lt;p&gt;Dica rápida para acessar CMD remotamente usando a solução do UAC de administrador.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Mover ou deletar computadores e usuários inativos do AD</title>
-      <link>https://www.manfredini.net.br/posts/mover_deletar_usuarios_computadores_ad/</link>
+      <link>http://localhost:1313/posts/mover_deletar_usuarios_computadores_ad/</link>
       <pubDate>Sun, 27 Jun 2021 20:27:34 -0300</pubDate>
-      
-      <guid>https://www.manfredini.net.br/posts/mover_deletar_usuarios_computadores_ad/</guid>
+      <guid>http://localhost:1313/posts/mover_deletar_usuarios_computadores_ad/</guid>
       <description>&lt;p&gt;Dicas rápidas para gerenciar usuários e computadores inativos no Windows Active Directory&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Playground</title>
+      <link>http://localhost:1313/posts/playground/</link>
+      <pubDate>Sun, 27 Jun 2021 20:24:33 -0300</pubDate>
+      <guid>http://localhost:1313/posts/playground/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Markdown Syntax</title>
+      <link>http://localhost:1313/posts/markdown-syntax/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/markdown-syntax/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.markdownguide.org/basic-syntax/&#34;&gt;https://www.markdownguide.org/basic-syntax/&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.markdownguide.org/cheat-sheet/&#34;&gt;https://www.markdownguide.org/cheat-sheet/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;&#xA;&lt;h2 id=&#34;headings&#34;&gt;Headings&lt;/h2&gt;&#xA;&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>http://localhost:1313/posts/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hugoisforlovers/</guid>
+      <description>&lt;h2 id=&#34;step-1-install-hugo&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;&#xA;&lt;p&gt;Go to &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;Hugo releases&lt;/a&gt; and download the&#xA;appropriate version for your OS and architecture.&lt;/p&gt;&#xA;&lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;&#xA;&lt;p&gt;More complete instructions are available at &lt;a href=&#34;https://gohugo.io/getting-started/installing/&#34;&gt;Install Hugo&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;step-2-build-the-docs&#34;&gt;Step 2. Build the Docs&lt;/h2&gt;&#xA;&lt;p&gt;Hugo has its own example site which happens to also be the documentation site&#xA;you are reading right now.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

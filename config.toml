@@ -2,8 +2,14 @@ baseURL = "https://www.manfredini.net.br/"
 title = "ManfreDocs"
 #themesDir = "../.."
 theme = "m10c"
-googleAnalytics = "UA-122321314-1"
-paginate = 10
+#googleAnalytics = "UA-122321314-1"
+#paginate = 10
+
+[pagination]
+  disableAliases = false
+  pagerSize = 20
+  path = 'page'
+
 
 [menu]
   [[menu.main]]
@@ -24,8 +30,8 @@ paginate = 10
 
 [params]
   author = "Leo Manfredini"
-  description = "Anotações do dia a dia"
-  menu_item_separator = " - "
+  description = " "
+  menu_item_separator = " / "
   avatar = "avatar_leo.jpg"
   [[params.social]]
     icon = "github"

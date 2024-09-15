@@ -1,58 +1,51 @@
 <!doctype html>
-<html lang="en-us">
-  <head>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Erro 0x80070534 ao executar tarefa agendada no Windows // ManfreDocs</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="generator" content="Hugo 0.134.1">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Leo Manfredini" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="https://www.manfredini.net.br/css/main.min.4a7ec8660f9a44b08c4da97c5f2e31b1192df1d4d0322e65c0dbbc6ecb1b863f.css" />
+    <link rel="stylesheet" href="http://localhost:1313/css/main.min.4a7ec8660f9a44b08c4da97c5f2e31b1192df1d4d0322e65c0dbbc6ecb1b863f.css" />
 
     
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-122321314-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Erro 0x80070534 ao executar tarefa agendada no Windows"/>
-<meta name="twitter:description" content="Problema: Erro 0x80070534 exibido nos logs do Windows ao tentar executar uma tarefa agendada que exige permissões administrativas.
-Solução: Configurar a tarefa para executar com o usuário NT AUTHORITY\System, conforme imagem a seguir:"/>
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Erro 0x80070534 ao executar tarefa agendada no Windows">
+  <meta name="twitter:description" content="Problema: Erro 0x80070534 exibido nos logs do Windows ao tentar executar uma tarefa agendada que exige permissões administrativas.
+Solução: Configurar a tarefa para executar com o usuário NT AUTHORITY\System, conforme imagem a seguir:">
 
-    <meta property="og:title" content="Erro 0x80070534 ao executar tarefa agendada no Windows" />
-<meta property="og:description" content="Problema: Erro 0x80070534 exibido nos logs do Windows ao tentar executar uma tarefa agendada que exige permissões administrativas.
-Solução: Configurar a tarefa para executar com o usuário NT AUTHORITY\System, conforme imagem a seguir:" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.manfredini.net.br/posts/erro-0x80070534/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-07-01T22:07:25-03:00" />
-<meta property="article:modified_time" content="2021-07-01T22:07:25-03:00" />
-
+    <meta property="og:url" content="http://localhost:1313/posts/erro-0x80070534/">
+  <meta property="og:site_name" content="ManfreDocs">
+  <meta property="og:title" content="Erro 0x80070534 ao executar tarefa agendada no Windows">
+  <meta property="og:description" content="Problema: Erro 0x80070534 exibido nos logs do Windows ao tentar executar uma tarefa agendada que exige permissões administrativas.
+Solução: Configurar a tarefa para executar com o usuário NT AUTHORITY\System, conforme imagem a seguir:">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-07-01T22:07:25-03:00">
+    <meta property="article:modified_time" content="2021-07-01T22:07:25-03:00">
+    <meta property="article:tag" content="AD">
+    <meta property="article:tag" content="Windows">
 
 
   </head>
   <body>
     <header class="app-header">
-      <a href="https://www.manfredini.net.br/"><img class="app-header-avatar" src="/avatar_leo.jpg" alt="Leo Manfredini" /></a>
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="/avatar_leo.jpg" alt="Leo Manfredini" /></a>
       <h1>ManfreDocs</h1>
       <nav class="app-header-menu">
           <a class="app-header-menu-item" href="/">Home</a>
-             - 
+             / 
           
           <a class="app-header-menu-item" href="/tags/">Tags</a>
-             - 
+             / 
           
           <a class="app-header-menu-item" href="/about/">About</a>
       </nav>
-      <p>Anotações do dia a dia</p>
+      <p> </p>
       <div class="app-header-social">
         
           <a href="https://github.com/leomanfredini" target="_blank" rel="noreferrer noopener">
@@ -96,15 +89,15 @@ Solução: Configurar a tarefa para executar com o usuário NT AUTHORITY\System,
   <title>tag</title>
   <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
 </svg>
-              <a class="tag" href="https://www.manfredini.net.br/tags/ad/">AD</a>
-              <a class="tag" href="https://www.manfredini.net.br/tags/windows/">Windows</a>
+              <a class="tag" href="http://localhost:1313/tags/ad/">AD</a>
+              <a class="tag" href="http://localhost:1313/tags/windows/">Windows</a>
         </div>
       </div>
     </header>
     <div class="post-content">
       <p><strong>Problema:</strong> Erro 0x80070534 exibido nos logs do Windows ao tentar executar uma tarefa agendada que exige permissões administrativas.</p>
 <p><strong>Solução:</strong> Configurar a tarefa para executar com o usuário <strong><code>NT AUTHORITY\System</code></strong>, conforme imagem a seguir:</p>
-<figure><img src="0x80070534.png"/>
+<figure><img src="/posts/erro-0x80070534/0x80070534.png">
 </figure>
 
 

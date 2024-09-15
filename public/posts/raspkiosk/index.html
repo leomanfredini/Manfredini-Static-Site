@@ -1,60 +1,53 @@
 <!doctype html>
-<html lang="en-us">
-  <head>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Raspkiosk - Modo quiosque no Raspberry Pi // ManfreDocs</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="generator" content="Hugo 0.134.1">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Leo Manfredini" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="https://www.manfredini.net.br/css/main.min.4a7ec8660f9a44b08c4da97c5f2e31b1192df1d4d0322e65c0dbbc6ecb1b863f.css" />
+    <link rel="stylesheet" href="http://localhost:1313/css/main.min.4a7ec8660f9a44b08c4da97c5f2e31b1192df1d4d0322e65c0dbbc6ecb1b863f.css" />
 
     
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-122321314-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Raspkiosk - Modo quiosque no Raspberry Pi"/>
-<meta name="twitter:description" content="Kiosk Mode no Raspberry Pi usando a distribuição Raspbian
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Raspkiosk - Modo quiosque no Raspberry Pi">
+  <meta name="twitter:description" content="Kiosk Mode no Raspberry Pi usando a distribuição Raspbian
 O Kiosk Mode (ou Modo Quiosque) é um recurso utilizado em totens de auto atendimento e painéis informativos, onde há a necessidade de disponibilizar ao usuário somente um navegador de internet com uma ou mais páginas específicas, ocultando todos os outros atalhos disponíveis do sistema operacional.
-Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 11th 2021 Download: https://www.raspberrypi.org/software/operating-systems/ Repositório com os arquivos necessários: https://github."/>
+Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 11th 2021 Download: https://www.raspberrypi.org/software/operating-systems/ Repositório com os arquivos necessários: https://github.com/leomanfredini/raspkiosk MÉTODO 1 - INSTALAÇÃO MANUAL 1. REMOVER PACOTES DESNECESSÁRIOS $ sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y $ sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y ">
 
-    <meta property="og:title" content="Raspkiosk - Modo quiosque no Raspberry Pi" />
-<meta property="og:description" content="Kiosk Mode no Raspberry Pi usando a distribuição Raspbian
+    <meta property="og:url" content="http://localhost:1313/posts/raspkiosk/">
+  <meta property="og:site_name" content="ManfreDocs">
+  <meta property="og:title" content="Raspkiosk - Modo quiosque no Raspberry Pi">
+  <meta property="og:description" content="Kiosk Mode no Raspberry Pi usando a distribuição Raspbian
 O Kiosk Mode (ou Modo Quiosque) é um recurso utilizado em totens de auto atendimento e painéis informativos, onde há a necessidade de disponibilizar ao usuário somente um navegador de internet com uma ou mais páginas específicas, ocultando todos os outros atalhos disponíveis do sistema operacional.
-Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 11th 2021 Download: https://www.raspberrypi.org/software/operating-systems/ Repositório com os arquivos necessários: https://github." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.manfredini.net.br/posts/raspkiosk/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-09-16T15:53:49-03:00" />
-<meta property="article:modified_time" content="2021-09-16T15:53:49-03:00" />
-
+Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 11th 2021 Download: https://www.raspberrypi.org/software/operating-systems/ Repositório com os arquivos necessários: https://github.com/leomanfredini/raspkiosk MÉTODO 1 - INSTALAÇÃO MANUAL 1. REMOVER PACOTES DESNECESSÁRIOS $ sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y $ sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y ">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-09-16T15:53:49-03:00">
+    <meta property="article:modified_time" content="2021-09-16T15:53:49-03:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="RaspberryPi">
 
 
   </head>
   <body>
     <header class="app-header">
-      <a href="https://www.manfredini.net.br/"><img class="app-header-avatar" src="/avatar_leo.jpg" alt="Leo Manfredini" /></a>
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="/avatar_leo.jpg" alt="Leo Manfredini" /></a>
       <h1>ManfreDocs</h1>
       <nav class="app-header-menu">
           <a class="app-header-menu-item" href="/">Home</a>
-             - 
+             / 
           
           <a class="app-header-menu-item" href="/tags/">Tags</a>
-             - 
+             / 
           
           <a class="app-header-menu-item" href="/about/">About</a>
       </nav>
-      <p>Anotações do dia a dia</p>
+      <p> </p>
       <div class="app-header-social">
         
           <a href="https://github.com/leomanfredini" target="_blank" rel="noreferrer noopener">
@@ -98,8 +91,8 @@ Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 1
   <title>tag</title>
   <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
 </svg>
-              <a class="tag" href="https://www.manfredini.net.br/tags/linux/">Linux</a>
-              <a class="tag" href="https://www.manfredini.net.br/tags/raspberrypi/">RaspberryPi</a>
+              <a class="tag" href="http://localhost:1313/tags/linux/">Linux</a>
+              <a class="tag" href="http://localhost:1313/tags/raspberrypi/">RaspberryPi</a>
         </div>
       </div>
     </header>

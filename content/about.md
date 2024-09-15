@@ -2,4 +2,4 @@
 title = "About"
 +++
 
-Minhas anotações para referências futuras.
+Minhas anotações para futuras referências.

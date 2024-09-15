@@ -2,59 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.manfredini.net.br/posts/dhcp-snooping/</loc>
+    <loc>http://localhost:1313/tags/docker/</loc>
+    <lastmod>2024-09-13T23:55:06-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/docker-compose/</loc>
+    <lastmod>2024-09-13T23:55:06-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/docker-compose-portainer/</loc>
+    <lastmod>2024-09-13T23:55:06-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2024-09-13T23:55:06-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-09-13T23:55:06-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-09-13T23:55:06-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-09-13T23:55:06-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ssh/</loc>
+    <lastmod>2023-11-15T09:06:21-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ssh-sem-senha/</loc>
+    <lastmod>2023-11-15T09:06:21-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/linux-notepad/linux-notepad/</loc>
+    <lastmod>2023-11-12T21:38:35-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/nginx/</loc>
+    <lastmod>2022-05-24T21:26:26-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/nginx-reverse-balancer/</loc>
+    <lastmod>2022-05-24T21:26:26-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/dhcp-snooping/</loc>
     <lastmod>2021-10-02T21:29:05-03:00</lastmod>
   </url><url>
-    <loc>https://www.manfredini.net.br/</loc>
+    <loc>http://localhost:1313/tags/redes/</loc>
     <lastmod>2021-10-02T21:29:05-03:00</lastmod>
   </url><url>
-    <loc>https://www.manfredini.net.br/posts/</loc>
+    <loc>http://localhost:1313/tags/seguran%C3%A7a/</loc>
     <lastmod>2021-10-02T21:29:05-03:00</lastmod>
   </url><url>
-    <loc>https://www.manfredini.net.br/tags/redes/</loc>
-    <lastmod>2021-10-02T21:29:05-03:00</lastmod>
-  </url><url>
-    <loc>https://www.manfredini.net.br/tags/seguran%C3%A7a/</loc>
-    <lastmod>2021-10-02T21:29:05-03:00</lastmod>
-  </url><url>
-    <loc>https://www.manfredini.net.br/tags/</loc>
-    <lastmod>2021-10-02T21:29:05-03:00</lastmod>
-  </url><url>
-    <loc>https://www.manfredini.net.br/tags/linux/</loc>
+    <loc>http://localhost:1313/tags/raspberrypi/</loc>
     <lastmod>2021-09-16T15:53:49-03:00</lastmod>
   </url><url>
-    <loc>https://www.manfredini.net.br/tags/raspberrypi/</loc>
+    <loc>http://localhost:1313/posts/raspkiosk/</loc>
     <lastmod>2021-09-16T15:53:49-03:00</lastmod>
   </url><url>
-    <loc>https://www.manfredini.net.br/posts/raspkiosk/</loc>
-    <lastmod>2021-09-16T15:53:49-03:00</lastmod>
-  </url><url>
-    <loc>https://www.manfredini.net.br/posts/comandos-atalhos-windows/</loc>
+    <loc>http://localhost:1313/posts/comandos-atalhos-windows/</loc>
     <lastmod>2021-09-16T10:22:16-03:00</lastmod>
   </url><url>
-    <loc>https://www.manfredini.net.br/tags/windows/</loc>
+    <loc>http://localhost:1313/tags/windows/</loc>
     <lastmod>2021-09-16T10:22:16-03:00</lastmod>
   </url><url>
-    <loc>https://www.manfredini.net.br/posts/opensource-solutions/</loc>
+    <loc>http://localhost:1313/posts/opensource-solutions/</loc>
     <lastmod>2021-07-03T15:26:13-03:00</lastmod>
   </url><url>
-    <loc>https://www.manfredini.net.br/tags/opensource/</loc>
+    <loc>http://localhost:1313/tags/opensource/</loc>
     <lastmod>2021-07-03T15:26:13-03:00</lastmod>
   </url><url>
-    <loc>https://www.manfredini.net.br/tags/ad/</loc>
+    <loc>http://localhost:1313/tags/ad/</loc>
     <lastmod>2021-07-01T22:07:25-03:00</lastmod>
   </url><url>
-    <loc>https://www.manfredini.net.br/posts/erro-0x80070534/</loc>
+    <loc>http://localhost:1313/posts/erro-0x80070534/</loc>
     <lastmod>2021-07-01T22:07:25-03:00</lastmod>
   </url><url>
-    <loc>https://www.manfredini.net.br/posts/cmd_remoto_windows/</loc>
+    <loc>http://localhost:1313/posts/cmd_remoto_windows/</loc>
     <lastmod>2021-06-27T20:30:44-03:00</lastmod>
   </url><url>
-    <loc>https://www.manfredini.net.br/posts/mover_deletar_usuarios_computadores_ad/</loc>
+    <loc>http://localhost:1313/posts/mover_deletar_usuarios_computadores_ad/</loc>
     <lastmod>2021-06-27T20:27:34-03:00</lastmod>
   </url><url>
-    <loc>https://www.manfredini.net.br/about/</loc>
+    <loc>http://localhost:1313/posts/playground/</loc>
+    <lastmod>2021-06-27T20:24:33-03:00</lastmod>
   </url><url>
-    <loc>https://www.manfredini.net.br/categories/</loc>
+    <loc>http://localhost:1313/posts/markdown-syntax/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/hugoisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

@@ -70,6 +70,12 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 
 #### Code block with backticks
 
+markdown_supported_languages
+
+https://github.com/highlightjs/highlight.js/blob/main/SUPPORTED_LANGUAGES.md
+https://github.com/jincheng9/markdown_supported_languages
+
+
 ```html
 html
 <!DOCTYPE html>

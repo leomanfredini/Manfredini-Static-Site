@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Redes on ManfreDocs</title>
-    <link>https://www.manfredini.net.br/tags/redes/</link>
+    <link>http://localhost:1313/tags/redes/</link>
     <description>Recent content in Redes on ManfreDocs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 02 Oct 2021 21:29:05 -0300</lastBuildDate><atom:link href="https://www.manfredini.net.br/tags/redes/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 02 Oct 2021 21:29:05 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/redes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DHCP Snooping - Proteção contra servidores DHCP não autorizados</title>
-      <link>https://www.manfredini.net.br/posts/dhcp-snooping/</link>
+      <link>http://localhost:1313/posts/dhcp-snooping/</link>
       <pubDate>Sat, 02 Oct 2021 21:29:05 -0300</pubDate>
-      
-      <guid>https://www.manfredini.net.br/posts/dhcp-snooping/</guid>
-      <description>Um servidor DHCP não autorizado na rede pode ocasionar diversos incidentes, desde indisponibilidade e até a falha no acesso a serviços internos e externos. Outra situação mais preocupante são os ataques do tipo DHCP Spoofing, onde os clientes recebem os parâmetros IP de um servidor DHCP manipulado, direcionando-os a um gateway preparado para interceptar o tráfego de rede ou até mesmo entregando parâmetros de DNS que direcionem a servidores manipulados para resolverem endereços de sites legítimos para servidores maliciosos.</description>
+      <guid>http://localhost:1313/posts/dhcp-snooping/</guid>
+      <description>&lt;p&gt;Um servidor DHCP não autorizado na rede pode ocasionar diversos incidentes, desde indisponibilidade e até a falha no acesso a serviços internos e externos. Outra situação mais preocupante são os ataques do tipo DHCP Spoofing, onde os clientes recebem os parâmetros IP de um servidor DHCP manipulado, direcionando-os a um gateway preparado para interceptar o tráfego de rede ou até mesmo entregando parâmetros de DNS que direcionem a servidores manipulados para resolverem endereços de sites legítimos para servidores maliciosos.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

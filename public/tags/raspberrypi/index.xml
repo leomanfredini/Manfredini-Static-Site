@@ -2,20 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RaspberryPi on ManfreDocs</title>
-    <link>https://www.manfredini.net.br/tags/raspberrypi/</link>
+    <link>http://localhost:1313/tags/raspberrypi/</link>
     <description>Recent content in RaspberryPi on ManfreDocs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 16 Sep 2021 15:53:49 -0300</lastBuildDate><atom:link href="https://www.manfredini.net.br/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Sep 2021 15:53:49 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Raspkiosk - Modo quiosque no Raspberry Pi</title>
-      <link>https://www.manfredini.net.br/posts/raspkiosk/</link>
+      <link>http://localhost:1313/posts/raspkiosk/</link>
       <pubDate>Thu, 16 Sep 2021 15:53:49 -0300</pubDate>
-      
-      <guid>https://www.manfredini.net.br/posts/raspkiosk/</guid>
-      <description>Kiosk Mode no Raspberry Pi usando a distribuição Raspbian
-O Kiosk Mode (ou Modo Quiosque) é um recurso utilizado em totens de auto atendimento e painéis informativos, onde há a necessidade de disponibilizar ao usuário somente um navegador de internet com uma ou mais páginas específicas, ocultando todos os outros atalhos disponíveis do sistema operacional.
-Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 11th 2021 Download: https://www.raspberrypi.org/software/operating-systems/ Repositório com os arquivos necessários: https://github.</description>
+      <guid>http://localhost:1313/posts/raspkiosk/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Kiosk Mode no Raspberry Pi usando a distribuição Raspbian&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;O &lt;em&gt;Kiosk Mode&lt;/em&gt; (ou Modo Quiosque) é um recurso utilizado em totens de auto atendimento e painéis informativos, onde há a necessidade de disponibilizar ao usuário somente um navegador de internet com uma ou mais páginas específicas, ocultando todos os outros atalhos disponíveis do sistema operacional.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Distribuição utilizada:&lt;/strong&gt; Raspberry Pi OS with desktop - Release date: January 11th 2021&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Download:&lt;/strong&gt; &lt;a href=&#34;https://www.raspberrypi.org/software/operating-systems/&#34; title=&#34;https://www.raspberrypi.org/software/operating-systems/&#34;&gt;https://www.raspberrypi.org/software/operating-systems/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Repositório com os arquivos necessários:&lt;/strong&gt; &lt;a href=&#34;https://github.com/leomanfredini/raspkiosk&#34;&gt;https://github.com/leomanfredini/raspkiosk&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;método-1---instalação-manual&#34;&gt;MÉTODO 1 - INSTALAÇÃO MANUAL&lt;/h3&gt;&#xA;&lt;h4 id=&#34;1-remover-pacotes-desnecessários&#34;&gt;1. REMOVER PACOTES DESNECESSÁRIOS&lt;/h4&gt;&#xA;&lt;pre&gt;&lt;code&gt;$ sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y&#xA;$ sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y&#xA;&lt;/code&gt;&lt;/pr</description>
     </item>
-    
   </channel>
 </rss>
