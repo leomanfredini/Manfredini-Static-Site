@@ -15,29 +15,41 @@ A funcionalidade **DHCP Snooping**, presente em diversos switches gerenciáveis,
 
 Entrando em modo de configuração
 
-    console> enable
-    console# config
+```console
+console> enable
+console# config
+```
 
 Habilitando o DHCP snooping globalmente.
 
-    console(config)# ip dhcp snooping
+```console
+console(config)# ip dhcp snooping
+```
 
 Habilite o snooping na VLAN principal. (Caso sua rede possua somente uma e o ID desta VLAN seja 1.
 
-    console(config)# ip dhcp snooping vlan 1
+```console
+console(config)# ip dhcp snooping vlan 1
+```
 
 Se houver mais alguma VLAN na rede, execute o comando acima, identificando cada uma delas.
 
 Habilite a porta confiável para a distribuição de DHCP. (repetindo os comandos abaixo para cada porta, caso existe mais de uma).
 
-    console(config)# interface ethernet g1
-    console(config-if)# ip dhcp snooping trust
+```console
+console(config)# interface ethernet g1
+console(config-if)# ip dhcp snooping trust
+```
 
 Você pode executar este comando para verificar as configurações.
 
-    console# show ip dhcp snooping
+```console
+console# show ip dhcp snooping
+```
 
 Para salvar as configurações, execute:
 
-    console# copy running-config startup-config
-    console# exit
+```console
+console# copy running-config startup-config
+console# exit
+```

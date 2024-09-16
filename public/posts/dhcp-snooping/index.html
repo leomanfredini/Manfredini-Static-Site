@@ -98,28 +98,22 @@
 <hr>
 <h4 id="habilitando-a-configuração-em-switches-dell">HABILITANDO A CONFIGURAÇÃO EM SWITCHES DELL</h4>
 <p>Entrando em modo de configuração</p>
-<pre><code>console&gt; enable
-console# config
-</code></pre>
-<p>Habilitando o DHCP snooping globalmente.</p>
-<pre><code>console(config)# ip dhcp snooping
-</code></pre>
-<p>Habilite o snooping na VLAN principal. (Caso sua rede possua somente uma e o ID desta VLAN seja 1.</p>
-<pre><code>console(config)# ip dhcp snooping vlan 1
-</code></pre>
-<p>Se houver mais alguma VLAN na rede, execute o comando acima, identificando cada uma delas.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>console&gt; enable
+</span></span><span style="display:flex;"><span>console# config
+</span></span></code></pre></div><p>Habilitando o DHCP snooping globalmente.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>console(config)# ip dhcp snooping
+</span></span></code></pre></div><p>Habilite o snooping na VLAN principal. (Caso sua rede possua somente uma e o ID desta VLAN seja 1.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>console(config)# ip dhcp snooping vlan 1
+</span></span></code></pre></div><p>Se houver mais alguma VLAN na rede, execute o comando acima, identificando cada uma delas.</p>
 <p>Habilite a porta confiável para a distribuição de DHCP. (repetindo os comandos abaixo para cada porta, caso existe mais de uma).</p>
-<pre><code>console(config)# interface ethernet g1
-console(config-if)# ip dhcp snooping trust
-</code></pre>
-<p>Você pode executar este comando para verificar as configurações.</p>
-<pre><code>console# show ip dhcp snooping
-</code></pre>
-<p>Para salvar as configurações, execute:</p>
-<pre><code>console# copy running-config startup-config
-console# exit
-</code></pre>
-
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>console(config)# interface ethernet g1
+</span></span><span style="display:flex;"><span>console(config-if)# ip dhcp snooping trust
+</span></span></code></pre></div><p>Você pode executar este comando para verificar as configurações.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>console# show ip dhcp snooping
+</span></span></code></pre></div><p>Para salvar as configurações, execute:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>console# copy running-config startup-config
+</span></span><span style="display:flex;"><span>console# exit
+</span></span></code></pre></div>
     </div>
     <div class="post-footer">
       

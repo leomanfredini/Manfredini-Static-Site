@@ -104,8 +104,8 @@
 <p>Rodar o comando abaixo em um prompt com permissões de admin para deletar as contas de computadores inativos por mais de 10 semanas</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>dsquery computer -inactive 10 | dsrm -subtree -noprompt -c &gt; c:\teste.txt
 </span></span></code></pre></div><p>Explicação:</p>
-<p>dsquery computer -inactive 10 : faz uma consulta no Active Directory por computadores com 10 semanas de inatividade. Alterando este valor podemos alterar para quantidade de semanas desejada.</p>
-<p>dsrm -subtree -noprompt -c &gt; c:\teste.txt : dsrm é um parâmetro utilizado para apagar computadores no Active Directory, os parâmetros -subtree -noprompt -c são para apagar recursivamente e sem interação do usuários e &gt; c:\teste.txt insere o resultado do comando em um arquivo teste.txt no C:/ este caminho pode ser alterado. ( Lembrando de executar este comando com elevação no prompt , para pode salvar arquivo no C:/).</p>
+<p><strong>dsquery computer -inactive 10</strong> : faz uma consulta no Active Directory por computadores com 10 semanas de inatividade. Alterando este valor podemos alterar para quantidade de semanas desejada.</p>
+<p><strong>dsrm -subtree -noprompt -c &gt; c:\teste.txt</strong> : dsrm é um parâmetro utilizado para apagar computadores no Active Directory, os parâmetros -subtree -noprompt -c são para apagar recursivamente e sem interação do usuários e &gt; c:\teste.txt insere o resultado do comando em um arquivo teste.txt no C:/ este caminho pode ser alterado. ( Lembrando de executar este comando com elevação no prompt , para pode salvar arquivo no C:/).</p>
     </div>
     <div class="post-footer">
       

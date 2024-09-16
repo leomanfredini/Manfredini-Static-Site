@@ -21,31 +21,37 @@ O *Kiosk Mode* (ou Modo Quiosque) é um recurso utilizado em totens de auto aten
 
 #### 1. REMOVER PACOTES DESNECESSÁRIOS
 
-
-	$ sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y
-	$ sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y
+```shell
+sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y
+sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y
+```
 
 
 #### 2. LIMPAR ARQUIVOS RESIDUAIS
 
-	$ sudo apt-get clean
-	$ sudo apt-get autoremove -y
-
+```shell
+sudo apt-get clean
+sudo apt-get autoremove -y
+```
 
 #### 3. ATUALIZAR O SISTEMA
 
-	$ sudo apt-get update
-	$ sudo apt-get upgrade
-
+```shell
+sudo apt-get update
+sudo apt-get upgrade
+```
 
 #### 4. INSTALAR PACOTES NECESSÁRIOS PARA O *KIOSK MODE*
 
-	$ sudo apt-get install xdotool unclutter sed
-
+```shell
+sudo apt-get install xdotool unclutter sed
+```
 
 #### 5. HABILITAR O LOGIN AUTOMÁTICO
 
-	$ sudo raspi-config
+```shell
+sudo raspi-config
+```
 
 1. Opcao 1 - System Options
 2. Opcao S5 - Boot/Autologin
@@ -56,7 +62,9 @@ O *Kiosk Mode* (ou Modo Quiosque) é um recurso utilizado em totens de auto aten
 
 Criar o arquivo para o script
 
-	$ nano /home/pi/kiosk.sh
+```shell
+nano /home/pi/kiosk.sh
+```
 
 Copiar o conteúdo do arquivo *kiosk.sh* disponível no repositório do Github
 
@@ -64,14 +72,17 @@ Copiar o conteúdo do arquivo *kiosk.sh* disponível no repositório do Github
 
 Criar o arquivo para o script
 
-	$ sudo nano /lib/systemd/system/kiosk.service
+```shell
+sudo nano /lib/systemd/system/kiosk.service
+```
 
 Copiar o conteúdo do arquivo *kiosk.service* disponível no repositório do Github
 
 #### 8. HABILITAR O SCRIPT NA INICIALIZAÇÃO
 
-	$ sudo systemctl enable kiosk.service
-
+```shell
+sudo systemctl enable kiosk.service
+```
 
 #### 9. USO
 
@@ -80,11 +91,14 @@ Seguindo os passos anteriores, o script já fica habilitado para iniciar no *Kio
 
 ##### 9.1 Comando para iniciar manualmente o Kiosk Mode
 
-	$ sudo systemctl start kiosk.service
-
+```shell
+sudo systemctl start kiosk.service
+```
 ##### 9.2 Comando para finalizar manualmente o Kiosk Mode
 
-	$ sudo systemctl stop kiosk.service
+```shell
+sudo systemctl stop kiosk.service
+```
 
 ------------
 
@@ -92,6 +106,9 @@ Seguindo os passos anteriores, o script já fica habilitado para iniciar no *Kio
 
 Em um terminal, executar o seguinte comando:
 
-	$ sudo wget -qO - https://raw.githubusercontent.com/leomanfredini/raspkiosk/master/install.sh | bash
+```shell
+sudo wget -qO - https://raw.githubusercontent.com/leomanfredini/raspkiosk/master/install.sh | bash
+```
+
 
 Na sequência, editar o arquivo _/home/pi/kiosk.sh_ personalizando o final da linha 23 com as URLs desejadas para exibição.

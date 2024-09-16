@@ -35,6 +35,6 @@ dsquery computer -inactive 10 | dsrm -subtree -noprompt -c > c:\teste.txt
 
 Explicação:
 
-dsquery computer -inactive 10 : faz uma consulta no Active Directory por computadores com 10 semanas de inatividade. Alterando este valor podemos alterar para quantidade de semanas desejada.
+**dsquery computer -inactive 10** : faz uma consulta no Active Directory por computadores com 10 semanas de inatividade. Alterando este valor podemos alterar para quantidade de semanas desejada.
 
-dsrm -subtree -noprompt -c > c:\teste.txt : dsrm é um parâmetro utilizado para apagar computadores no Active Directory, os parâmetros -subtree -noprompt -c são para apagar recursivamente e sem interação do usuários e > c:\teste.txt insere o resultado do comando em um arquivo teste.txt no C:/ este caminho pode ser alterado. ( Lembrando de executar este comando com elevação no prompt , para pode salvar arquivo no C:/).
+**dsrm -subtree -noprompt -c > c:\teste.txt** : dsrm é um parâmetro utilizado para apagar computadores no Active Directory, os parâmetros -subtree -noprompt -c são para apagar recursivamente e sem interação do usuários e > c:\teste.txt insere o resultado do comando em um arquivo teste.txt no C:/ este caminho pode ser alterado. ( Lembrando de executar este comando com elevação no prompt , para pode salvar arquivo no C:/).

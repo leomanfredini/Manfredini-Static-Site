@@ -16,14 +16,14 @@
   <meta name="twitter:title" content="Raspkiosk - Modo quiosque no Raspberry Pi">
   <meta name="twitter:description" content="Kiosk Mode no Raspberry Pi usando a distribuição Raspbian
 O Kiosk Mode (ou Modo Quiosque) é um recurso utilizado em totens de auto atendimento e painéis informativos, onde há a necessidade de disponibilizar ao usuário somente um navegador de internet com uma ou mais páginas específicas, ocultando todos os outros atalhos disponíveis do sistema operacional.
-Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 11th 2021 Download: https://www.raspberrypi.org/software/operating-systems/ Repositório com os arquivos necessários: https://github.com/leomanfredini/raspkiosk MÉTODO 1 - INSTALAÇÃO MANUAL 1. REMOVER PACOTES DESNECESSÁRIOS $ sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y $ sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y ">
+Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 11th 2021 Download: https://www.raspberrypi.org/software/operating-systems/ Repositório com os arquivos necessários: https://github.com/leomanfredini/raspkiosk MÉTODO 1 - INSTALAÇÃO MANUAL 1. REMOVER PACOTES DESNECESSÁRIOS sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y ">
 
     <meta property="og:url" content="http://localhost:1313/posts/raspkiosk/">
   <meta property="og:site_name" content="ManfreDocs">
   <meta property="og:title" content="Raspkiosk - Modo quiosque no Raspberry Pi">
   <meta property="og:description" content="Kiosk Mode no Raspberry Pi usando a distribuição Raspbian
 O Kiosk Mode (ou Modo Quiosque) é um recurso utilizado em totens de auto atendimento e painéis informativos, onde há a necessidade de disponibilizar ao usuário somente um navegador de internet com uma ou mais páginas específicas, ocultando todos os outros atalhos disponíveis do sistema operacional.
-Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 11th 2021 Download: https://www.raspberrypi.org/software/operating-systems/ Repositório com os arquivos necessários: https://github.com/leomanfredini/raspkiosk MÉTODO 1 - INSTALAÇÃO MANUAL 1. REMOVER PACOTES DESNECESSÁRIOS $ sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y $ sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y ">
+Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 11th 2021 Download: https://www.raspberrypi.org/software/operating-systems/ Repositório com os arquivos necessários: https://github.com/leomanfredini/raspkiosk MÉTODO 1 - INSTALAÇÃO MANUAL 1. REMOVER PACOTES DESNECESSÁRIOS sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y ">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -107,55 +107,44 @@ Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 1
 <hr>
 <h3 id="método-1---instalação-manual">MÉTODO 1 - INSTALAÇÃO MANUAL</h3>
 <h4 id="1-remover-pacotes-desnecessários">1. REMOVER PACOTES DESNECESSÁRIOS</h4>
-<pre><code>$ sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y
-$ sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y
-</code></pre>
-<h4 id="2-limpar-arquivos-residuais">2. LIMPAR ARQUIVOS RESIDUAIS</h4>
-<pre><code>$ sudo apt-get clean
-$ sudo apt-get autoremove -y
-</code></pre>
-<h4 id="3-atualizar-o-sistema">3. ATUALIZAR O SISTEMA</h4>
-<pre><code>$ sudo apt-get update
-$ sudo apt-get upgrade
-</code></pre>
-<h4 id="4-instalar-pacotes-necessários-para-o-kiosk-mode">4. INSTALAR PACOTES NECESSÁRIOS PARA O <em>KIOSK MODE</em></h4>
-<pre><code>$ sudo apt-get install xdotool unclutter sed
-</code></pre>
-<h4 id="5-habilitar-o-login-automático">5. HABILITAR O LOGIN AUTOMÁTICO</h4>
-<pre><code>$ sudo raspi-config
-</code></pre>
-<ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y
+</span></span><span style="display:flex;"><span>sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y
+</span></span></code></pre></div><h4 id="2-limpar-arquivos-residuais">2. LIMPAR ARQUIVOS RESIDUAIS</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt-get clean
+</span></span><span style="display:flex;"><span>sudo apt-get autoremove -y
+</span></span></code></pre></div><h4 id="3-atualizar-o-sistema">3. ATUALIZAR O SISTEMA</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt-get update
+</span></span><span style="display:flex;"><span>sudo apt-get upgrade
+</span></span></code></pre></div><h4 id="4-instalar-pacotes-necessários-para-o-kiosk-mode">4. INSTALAR PACOTES NECESSÁRIOS PARA O <em>KIOSK MODE</em></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt-get install xdotool unclutter sed
+</span></span></code></pre></div><h4 id="5-habilitar-o-login-automático">5. HABILITAR O LOGIN AUTOMÁTICO</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo raspi-config
+</span></span></code></pre></div><ol>
 <li>Opcao 1 - System Options</li>
 <li>Opcao S5 - Boot/Autologin</li>
 <li>Opção B4 - Desktop Autologin</li>
 </ol>
 <h4 id="6-criar-o-script-responsável-por-iniciar-o-kiosk-mode">6. CRIAR O SCRIPT RESPONSÁVEL POR INICIAR O <em>KIOSK MODE</em></h4>
 <p>Criar o arquivo para o script</p>
-<pre><code>$ nano /home/pi/kiosk.sh
-</code></pre>
-<p>Copiar o conteúdo do arquivo <em>kiosk.sh</em> disponível no repositório do Github</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>nano /home/pi/kiosk.sh
+</span></span></code></pre></div><p>Copiar o conteúdo do arquivo <em>kiosk.sh</em> disponível no repositório do Github</p>
 <h4 id="7-criando-o-serviço-para-iniciar-o-script-no-boot">7. CRIANDO O SERVIÇO PARA INICIAR O SCRIPT NO BOOT</h4>
 <p>Criar o arquivo para o script</p>
-<pre><code>$ sudo nano /lib/systemd/system/kiosk.service
-</code></pre>
-<p>Copiar o conteúdo do arquivo <em>kiosk.service</em> disponível no repositório do Github</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo nano /lib/systemd/system/kiosk.service
+</span></span></code></pre></div><p>Copiar o conteúdo do arquivo <em>kiosk.service</em> disponível no repositório do Github</p>
 <h4 id="8-habilitar-o-script-na-inicialização">8. HABILITAR O SCRIPT NA INICIALIZAÇÃO</h4>
-<pre><code>$ sudo systemctl enable kiosk.service
-</code></pre>
-<h4 id="9-uso">9. USO</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo systemctl enable kiosk.service
+</span></span></code></pre></div><h4 id="9-uso">9. USO</h4>
 <p>Seguindo os passos anteriores, o script já fica habilitado para iniciar no <em>Kiosk Mode</em> sempre que o sistema for iniciado. Para efetuar qualquer interação manualmente, utilize os seguintes comandos:</p>
 <h5 id="91-comando-para-iniciar-manualmente-o-kiosk-mode">9.1 Comando para iniciar manualmente o Kiosk Mode</h5>
-<pre><code>$ sudo systemctl start kiosk.service
-</code></pre>
-<h5 id="92-comando-para-finalizar-manualmente-o-kiosk-mode">9.2 Comando para finalizar manualmente o Kiosk Mode</h5>
-<pre><code>$ sudo systemctl stop kiosk.service
-</code></pre>
-<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo systemctl start kiosk.service
+</span></span></code></pre></div><h5 id="92-comando-para-finalizar-manualmente-o-kiosk-mode">9.2 Comando para finalizar manualmente o Kiosk Mode</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo systemctl stop kiosk.service
+</span></span></code></pre></div><hr>
 <h3 id="método-2---instalação-automática-via-script">MÉTODO 2 - INSTALAÇÃO AUTOMÁTICA VIA SCRIPT</h3>
 <p>Em um terminal, executar o seguinte comando:</p>
-<pre><code>$ sudo wget -qO - https://raw.githubusercontent.com/leomanfredini/raspkiosk/master/install.sh | bash
-</code></pre>
-<p>Na sequência, editar o arquivo <em>/home/pi/kiosk.sh</em> personalizando o final da linha 23 com as URLs desejadas para exibição.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo wget -qO - https://raw.githubusercontent.com/leomanfredini/raspkiosk/master/install.sh | bash
+</span></span></code></pre></div><p>Na sequência, editar o arquivo <em>/home/pi/kiosk.sh</em> personalizando o final da linha 23 com as URLs desejadas para exibição.</p>
 
     </div>
     <div class="post-footer">

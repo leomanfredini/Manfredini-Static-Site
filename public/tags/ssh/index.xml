@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/ssh-sem-senha/</link>
       <pubDate>Wed, 15 Nov 2023 09:06:21 -0300</pubDate>
       <guid>http://localhost:1313/posts/ssh-sem-senha/</guid>
-      <description>&lt;p&gt;A autenticação segura em servidores remotos é facilitada pelo método de conexão SSH sem o uso de senhas. Abaixo, apresentamos os passos para configurar a conexão entre o cliente e o servidor.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;1---gerar-a-chave-pública-na-máquina-cliente&#34;&gt;1 - Gerar a chave pública na máquina cliente&lt;/h3&gt;&#xA;&lt;p&gt;Para gerar o par de chaves, execute o seguinte comando na máquina cliente:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;ssh-keygen -t rsa&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;A chave padrão é de 2048 bits. Caso precise de mais segurança basta, trocar o valor para 4096 bits. Neste caso o comando será:&lt;/p&gt;</description>
+      <description>&lt;p&gt;A autenticação segura em servidores remotos é facilitada pelo método de conexão SSH sem o uso de senhas. Abaixo, apresento os passos para configurar a conexão entre o cliente e o servidor.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;1---gerar-a-chave-pública-na-máquina-cliente&#34;&gt;1 - Gerar a chave pública na máquina cliente&lt;/h3&gt;&#xA;&lt;p&gt;Para gerar o par de chaves, execute o seguinte comando na máquina cliente:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;ssh-keygen -t rsa&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;A chave padrão é de 2048 bits. Caso precise de mais segurança basta, trocar o valor para 4096 bits. Neste caso o comando será:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

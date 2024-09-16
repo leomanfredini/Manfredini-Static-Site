@@ -14,7 +14,8 @@ tags: ["Linux"]
 Localizar conteúdos específicos dentro de arquivos sem a necessidade de abri-los.  
 No exemplo abaixo, será executada uma busca pela sentença **apache** em todos os arquivos do diretório `/etc` apresentando uma listagem dos aquivos com esta sentença.
 
-    $ grep -rli 'apache' /etc/* 
-
+```shell
+grep -rli 'apache' /etc/* 
+```
 
 ------------

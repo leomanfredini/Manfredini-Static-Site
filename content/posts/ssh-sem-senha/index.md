@@ -5,18 +5,22 @@ draft: false
 tags: ["Linux","SSH"]
 ---
 
-A autenticação segura em servidores remotos é facilitada pelo método de conexão SSH sem o uso de senhas. Abaixo, apresentamos os passos para configurar a conexão entre o cliente e o servidor.
+A autenticação segura em servidores remotos é facilitada pelo método de conexão SSH sem o uso de senhas. Abaixo, apresento os passos para configurar a conexão entre o cliente e o servidor.
 
 ---
 ### 1 - Gerar a chave pública na máquina cliente
 
 Para gerar o par de chaves, execute o seguinte comando na máquina cliente:
 
-    ssh-keygen -t rsa
+```shell
+ssh-keygen -t rsa
+```
 
 A chave padrão é de 2048 bits. Caso precise de mais segurança basta, trocar o valor para 4096 bits. Neste caso o comando será:
 
-    ssh-keygen -t rsa -b 4096
+```shell
+ssh-keygen -t rsa -b 4096
+```
 
 O processo de geração da chave irá solicitar algumas perguntas como o nome de arquivo em que a chave será salva ( _/home/SEU-USUARIO/.ssh/id_rsa_ ) e também a definição de uma palavra-chave.
 Você pode pressionar enter em ambas as perguntas para definir o valor padrão.  
@@ -36,7 +40,9 @@ A seguir, 3 métodos para copiar a chave pública para a máquina destino:
 
 A sintaxe desse comando é:
 
-    ssh-copy-id usuario_remoto@endereço_IP_remoto
+```shell
+ssh-copy-id usuario_remoto@endereço_IP_remoto
+```
 
 Será solicitada a autenticação SSH da máquina destino e uma vez que ela ocorrer com sucesso, a chave pública será adicionada ao arquivo de chaves autorizadas da máquina remota. Em seguida a conexão será encerrada.
 
@@ -44,7 +50,9 @@ Será solicitada a autenticação SSH da máquina destino e uma vez que ela ocor
 
 Esse método utiliza o SSH para copiar a chave pública para a máquina destino
 
-    cat ~/.ssh/id_rsa.pub | ssh <usuario_remoto>@<edereço_IP_remoto> "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+```shell
+cat ~/.ssh/id_rsa.pub | ssh <usuario_remoto>@<edereço_IP_remoto> "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+```
 
 Um registro contendo a sua chave pública será adicionado ao arquivo de chaves autorizadas da máquina destino.
 
@@ -55,17 +63,23 @@ Método mais trabalhoso por ser totalmente manual, que consiste em adicionar man
 
 Copie o seu arquivo de chave pública para a máquina destino:
 
-    scp ~/.ssh/id_rsa.pub <usuario_remoto>@<edereço_IP_remoto>:~
+```shell
+scp ~/.ssh/id_rsa.pub <usuario_remoto>@<edereço_IP_remoto>:~
+```
 
 O comando acima irá copiar o arquivo da chave pública para a raiz do diretório /home do usuário que efetuou o login.  
 
 Em seguida, efetue login SSH na máquina destino
 
-    ssh <usuario_remoto>@<endereço_IP_remoto>
+```shell
+ssh <usuario_remoto>@<endereço_IP_remoto>
+```
 
 e transfira o conteúdo da sua chave pública (que está no arquivo recém copiado) para o arquivo de chaves autorizadas da máquina destino:
 
-    cat id_rsa.pub >> ~/.ssh/authorized_keys
+```shell
+cat id_rsa.pub >> ~/.ssh/authorized_keys
+```
 
 Nesse ponto já é possível conectar-se ao servidor remoto sem a necessidade de senhas.
 
@@ -74,13 +88,17 @@ Nesse ponto já é possível conectar-se ao servidor remoto sem a necessidade de
 
 Para testar a conexão sem senha, proceda normalmente como uma conexão normal:
 
-    ssh <seu_usuario>@<endereço_IP_remoto>
+```shell
+ssh <seu_usuario>@<endereço_IP_remoto>
+```
 
 Agora as conexões SSH iniciadas pelo cliente para o servidor serão efetuadas sem a necessidade de digitar a senha.
 
 É possível também "enviar" comandos para serem executados remotamente no servidor. No exemplo a seguir, enviamos ao servidor o comando para reiniciar o servidor Web Apache em um servidor Debian:
 
-    ssh root@servidor 'systemctl reload apache2'
+```shell
+ssh root@servidor 'systemctl reload apache2'
+```
 
 Importante observar que o usuário que está enviando o comando deve possuir permissão para executá-lo na máquina destino.
 
@@ -94,13 +112,16 @@ Para melhorar a segurança do seu servidor, desabilite a conexão SSH com senha 
 
 1. Conecte ao seu servidor via SSH
 2. Edite o arquivo **/etc/ssh/sshd_config** utilizando algum editor de texto, como o **nano**
-```
+
+```shell
 nano /etc/ssh/sshd_config
 ```
+
 3. Localize a linha **PasswordAuthentication yes** e altere seu valor para **no** (Utilize o **CTRL + W** para abrir a ferramenta de busca)
 4. Salve o arquivo com **CTRL + X** , digite **Y** e dê **enter**
 5. Reinicie o serviço **SSHD** para que as alterações tenham efeito
-```
+
+```shell
 systemctl reload sshd
 ```
 ---

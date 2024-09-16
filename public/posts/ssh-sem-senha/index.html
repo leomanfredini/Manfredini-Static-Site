@@ -14,14 +14,14 @@
     
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="SSH Sem Senha no Linux">
-  <meta name="twitter:description" content="A autenticação segura em servidores remotos é facilitada pelo método de conexão SSH sem o uso de senhas. Abaixo, apresentamos os passos para configurar a conexão entre o cliente e o servidor.
+  <meta name="twitter:description" content="A autenticação segura em servidores remotos é facilitada pelo método de conexão SSH sem o uso de senhas. Abaixo, apresento os passos para configurar a conexão entre o cliente e o servidor.
 1 - Gerar a chave pública na máquina cliente Para gerar o par de chaves, execute o seguinte comando na máquina cliente:
 ssh-keygen -t rsa A chave padrão é de 2048 bits. Caso precise de mais segurança basta, trocar o valor para 4096 bits. Neste caso o comando será:">
 
     <meta property="og:url" content="http://localhost:1313/posts/ssh-sem-senha/">
   <meta property="og:site_name" content="ManfreDocs">
   <meta property="og:title" content="SSH Sem Senha no Linux">
-  <meta property="og:description" content="A autenticação segura em servidores remotos é facilitada pelo método de conexão SSH sem o uso de senhas. Abaixo, apresentamos os passos para configurar a conexão entre o cliente e o servidor.
+  <meta property="og:description" content="A autenticação segura em servidores remotos é facilitada pelo método de conexão SSH sem o uso de senhas. Abaixo, apresento os passos para configurar a conexão entre o cliente e o servidor.
 1 - Gerar a chave pública na máquina cliente Para gerar o par de chaves, execute o seguinte comando na máquina cliente:
 ssh-keygen -t rsa A chave padrão é de 2048 bits. Caso precise de mais segurança basta, trocar o valor para 4096 bits. Neste caso o comando será:">
   <meta property="og:locale" content="en">
@@ -97,16 +97,14 @@ ssh-keygen -t rsa A chave padrão é de 2048 bits. Caso precise de mais seguran�
       </div>
     </header>
     <div class="post-content">
-      <p>A autenticação segura em servidores remotos é facilitada pelo método de conexão SSH sem o uso de senhas. Abaixo, apresentamos os passos para configurar a conexão entre o cliente e o servidor.</p>
+      <p>A autenticação segura em servidores remotos é facilitada pelo método de conexão SSH sem o uso de senhas. Abaixo, apresento os passos para configurar a conexão entre o cliente e o servidor.</p>
 <hr>
 <h3 id="1---gerar-a-chave-pública-na-máquina-cliente">1 - Gerar a chave pública na máquina cliente</h3>
 <p>Para gerar o par de chaves, execute o seguinte comando na máquina cliente:</p>
-<pre><code>ssh-keygen -t rsa
-</code></pre>
-<p>A chave padrão é de 2048 bits. Caso precise de mais segurança basta, trocar o valor para 4096 bits. Neste caso o comando será:</p>
-<pre><code>ssh-keygen -t rsa -b 4096
-</code></pre>
-<p>O processo de geração da chave irá solicitar algumas perguntas como o nome de arquivo em que a chave será salva ( <em>/home/SEU-USUARIO/.ssh/id_rsa</em> ) e também a definição de uma palavra-chave.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ssh-keygen -t rsa
+</span></span></code></pre></div><p>A chave padrão é de 2048 bits. Caso precise de mais segurança basta, trocar o valor para 4096 bits. Neste caso o comando será:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ssh-keygen -t rsa -b <span style="color:#ae81ff">4096</span>
+</span></span></code></pre></div><p>O processo de geração da chave irá solicitar algumas perguntas como o nome de arquivo em que a chave será salva ( <em>/home/SEU-USUARIO/.ssh/id_rsa</em> ) e também a definição de uma palavra-chave.
 Você pode pressionar enter em ambas as perguntas para definir o valor padrão.</p>
 <p>A palavra-chave é utilizada para criptografar a chave privada, mas não é obrigatória e pode ser deixada em branco.</p>
 <p>A chave privada será salva na localização padrão <strong>~/.ssh/id_rsa</strong> e a chave pública será salva no arquivo <strong>~/.ssh/id_rsa.pub</strong><br>
@@ -116,37 +114,30 @@ Nunca revele o conteúdo de sua chave privada e muito menos a distribua por aí,
 <p>A seguir, 3 métodos para copiar a chave pública para a máquina destino:</p>
 <h4 id="1ª-opção-comando-_ssh-copy-id_">1ª Opção: Comando <em>ssh-copy-id</em></h4>
 <p>A sintaxe desse comando é:</p>
-<pre><code>ssh-copy-id usuario_remoto@endereço_IP_remoto
-</code></pre>
-<p>Será solicitada a autenticação SSH da máquina destino e uma vez que ela ocorrer com sucesso, a chave pública será adicionada ao arquivo de chaves autorizadas da máquina remota. Em seguida a conexão será encerrada.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ssh-copy-id usuario_remoto@endereço_IP_remoto
+</span></span></code></pre></div><p>Será solicitada a autenticação SSH da máquina destino e uma vez que ela ocorrer com sucesso, a chave pública será adicionada ao arquivo de chaves autorizadas da máquina remota. Em seguida a conexão será encerrada.</p>
 <h4 id="2ª-opção-copiar-a-chave-pública-com-ssh">2ª Opção: Copiar a chave pública com SSH</h4>
 <p>Esse método utiliza o SSH para copiar a chave pública para a máquina destino</p>
-<pre><code>cat ~/.ssh/id_rsa.pub | ssh &lt;usuario_remoto&gt;@&lt;edereço_IP_remoto&gt; &quot;mkdir -p ~/.ssh &amp;&amp; cat &gt;&gt; ~/.ssh/authorized_keys&quot;
-</code></pre>
-<p>Um registro contendo a sua chave pública será adicionado ao arquivo de chaves autorizadas da máquina destino.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cat ~/.ssh/id_rsa.pub | ssh &lt;usuario_remoto&gt;@&lt;edereço_IP_remoto&gt; <span style="color:#e6db74">&#34;mkdir -p ~/.ssh &amp;&amp; cat &gt;&gt; ~/.ssh/authorized_keys&#34;</span>
+</span></span></code></pre></div><p>Um registro contendo a sua chave pública será adicionado ao arquivo de chaves autorizadas da máquina destino.</p>
 <h4 id="3ª-opção-copiar-a-chave-pública-manualmente">3ª Opção: Copiar a chave pública manualmente</h4>
 <p>Método mais trabalhoso por ser totalmente manual, que consiste em adicionar manualmente o conteúdo do seu arquivo <strong>id_rsa.pub</strong> dentro do arquivo <strong>~/.ssh/authorized_keys</strong> na máquina destino.</p>
 <p>Copie o seu arquivo de chave pública para a máquina destino:</p>
-<pre><code>scp ~/.ssh/id_rsa.pub &lt;usuario_remoto&gt;@&lt;edereço_IP_remoto&gt;:~
-</code></pre>
-<p>O comando acima irá copiar o arquivo da chave pública para a raiz do diretório /home do usuário que efetuou o login.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>scp ~/.ssh/id_rsa.pub &lt;usuario_remoto&gt;@&lt;edereço_IP_remoto&gt;:~
+</span></span></code></pre></div><p>O comando acima irá copiar o arquivo da chave pública para a raiz do diretório /home do usuário que efetuou o login.</p>
 <p>Em seguida, efetue login SSH na máquina destino</p>
-<pre><code>ssh &lt;usuario_remoto&gt;@&lt;endereço_IP_remoto&gt;
-</code></pre>
-<p>e transfira o conteúdo da sua chave pública (que está no arquivo recém copiado) para o arquivo de chaves autorizadas da máquina destino:</p>
-<pre><code>cat id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys
-</code></pre>
-<p>Nesse ponto já é possível conectar-se ao servidor remoto sem a necessidade de senhas.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ssh &lt;usuario_remoto&gt;@&lt;endereço_IP_remoto&gt;
+</span></span></code></pre></div><p>e transfira o conteúdo da sua chave pública (que está no arquivo recém copiado) para o arquivo de chaves autorizadas da máquina destino:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cat id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys
+</span></span></code></pre></div><p>Nesse ponto já é possível conectar-se ao servidor remoto sem a necessidade de senhas.</p>
 <hr>
 <h3 id="3---testando-o-acesso-ssh-sem-senha">3 - Testando o acesso SSH sem senha</h3>
 <p>Para testar a conexão sem senha, proceda normalmente como uma conexão normal:</p>
-<pre><code>ssh &lt;seu_usuario&gt;@&lt;endereço_IP_remoto&gt;
-</code></pre>
-<p>Agora as conexões SSH iniciadas pelo cliente para o servidor serão efetuadas sem a necessidade de digitar a senha.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ssh &lt;seu_usuario&gt;@&lt;endereço_IP_remoto&gt;
+</span></span></code></pre></div><p>Agora as conexões SSH iniciadas pelo cliente para o servidor serão efetuadas sem a necessidade de digitar a senha.</p>
 <p>É possível também &ldquo;enviar&rdquo; comandos para serem executados remotamente no servidor. No exemplo a seguir, enviamos ao servidor o comando para reiniciar o servidor Web Apache em um servidor Debian:</p>
-<pre><code>ssh root@servidor 'systemctl reload apache2'
-</code></pre>
-<p>Importante observar que o usuário que está enviando o comando deve possuir permissão para executá-lo na máquina destino.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ssh root@servidor <span style="color:#e6db74">&#39;systemctl reload apache2&#39;</span>
+</span></span></code></pre></div><p>Importante observar que o usuário que está enviando o comando deve possuir permissão para executá-lo na máquina destino.</p>
 <hr>
 <h3 id="4---desabilitando-o-login-ssh-com-senha">4 - Desabilitando o login SSH com senha</h3>
 <p>A realização deste passo é facultativa, uma vez que, nesta etapa, o seu servidor estará configurado para aceitar conexões SSH mediante autenticação por chaves pública e privada (sem senha), assim como pelo método convencional que utiliza senhas. Porém, qualquer usuário que estiver em posse de sua senha conseguirá se conectar ao servidor.</p>
@@ -155,14 +146,14 @@ Nunca revele o conteúdo de sua chave privada e muito menos a distribua por aí,
 <li>Conecte ao seu servidor via SSH</li>
 <li>Edite o arquivo <strong>/etc/ssh/sshd_config</strong> utilizando algum editor de texto, como o <strong>nano</strong></li>
 </ol>
-<pre tabindex="0"><code>nano /etc/ssh/sshd_config
-</code></pre><ol start="3">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>nano /etc/ssh/sshd_config
+</span></span></code></pre></div><ol start="3">
 <li>Localize a linha <strong>PasswordAuthentication yes</strong> e altere seu valor para <strong>no</strong> (Utilize o <strong>CTRL + W</strong> para abrir a ferramenta de busca)</li>
 <li>Salve o arquivo com <strong>CTRL + X</strong> , digite <strong>Y</strong> e dê <strong>enter</strong></li>
 <li>Reinicie o serviço <strong>SSHD</strong> para que as alterações tenham efeito</li>
 </ol>
-<pre tabindex="0"><code>systemctl reload sshd
-</code></pre><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>systemctl reload sshd
+</span></span></code></pre></div><hr>
 
     </div>
     <div class="post-footer">
