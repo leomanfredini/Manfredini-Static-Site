@@ -4,7 +4,7 @@
     <title>Raspkiosk - Modo quiosque no Raspberry Pi // ManfreDocs</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.134.1">
+    <meta name="generator" content="Hugo 0.136.2">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Leo Manfredini" />
     <meta name="description" content="" />
@@ -16,14 +16,14 @@
   <meta name="twitter:title" content="Raspkiosk - Modo quiosque no Raspberry Pi">
   <meta name="twitter:description" content="Kiosk Mode no Raspberry Pi usando a distribuição Raspbian
 O Kiosk Mode (ou Modo Quiosque) é um recurso utilizado em totens de auto atendimento e painéis informativos, onde há a necessidade de disponibilizar ao usuário somente um navegador de internet com uma ou mais páginas específicas, ocultando todos os outros atalhos disponíveis do sistema operacional.
-Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 11th 2021 Download: https://www.raspberrypi.org/software/operating-systems/ Repositório com os arquivos necessários: https://github.com/leomanfredini/raspkiosk MÉTODO 1 - INSTALAÇÃO MANUAL 1. REMOVER PACOTES DESNECESSÁRIOS sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y ">
+Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 11th 2021 Download: https://www.raspberrypi.org/software/operating-systems/ Repositório com os arquivos necessários: https://github.com/leomanfredini/raspkiosk MÉTODO 1 - INSTALAÇÃO MANUAL 1. REMOVER PACOTES DESNECESSÁRIOS sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y 2. LIMPAR ARQUIVOS RESIDUAIS sudo apt-get clean sudo apt-get autoremove -y 3. ATUALIZAR O SISTEMA sudo apt-get update sudo apt-get upgrade 4. INSTALAR PACOTES NECESSÁRIOS PARA O KIOSK MODE sudo apt-get install xdotool unclutter sed 5. HABILITAR O LOGIN AUTOMÁTICO sudo raspi-config Opcao 1 - System Options Opcao S5 - Boot/Autologin Opção B4 - Desktop Autologin 6. CRIAR O SCRIPT RESPONSÁVEL POR INICIAR O KIOSK MODE Criar o arquivo para o script">
 
     <meta property="og:url" content="http://localhost:1313/posts/raspkiosk/">
   <meta property="og:site_name" content="ManfreDocs">
   <meta property="og:title" content="Raspkiosk - Modo quiosque no Raspberry Pi">
   <meta property="og:description" content="Kiosk Mode no Raspberry Pi usando a distribuição Raspbian
 O Kiosk Mode (ou Modo Quiosque) é um recurso utilizado em totens de auto atendimento e painéis informativos, onde há a necessidade de disponibilizar ao usuário somente um navegador de internet com uma ou mais páginas específicas, ocultando todos os outros atalhos disponíveis do sistema operacional.
-Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 11th 2021 Download: https://www.raspberrypi.org/software/operating-systems/ Repositório com os arquivos necessários: https://github.com/leomanfredini/raspkiosk MÉTODO 1 - INSTALAÇÃO MANUAL 1. REMOVER PACOTES DESNECESSÁRIOS sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y ">
+Distribuição utilizada: Raspberry Pi OS with desktop - Release date: January 11th 2021 Download: https://www.raspberrypi.org/software/operating-systems/ Repositório com os arquivos necessários: https://github.com/leomanfredini/raspkiosk MÉTODO 1 - INSTALAÇÃO MANUAL 1. REMOVER PACOTES DESNECESSÁRIOS sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y 2. LIMPAR ARQUIVOS RESIDUAIS sudo apt-get clean sudo apt-get autoremove -y 3. ATUALIZAR O SISTEMA sudo apt-get update sudo apt-get upgrade 4. INSTALAR PACOTES NECESSÁRIOS PARA O KIOSK MODE sudo apt-get install xdotool unclutter sed 5. HABILITAR O LOGIN AUTOMÁTICO sudo raspi-config Opcao 1 - System Options Opcao S5 - Boot/Autologin Opção B4 - Desktop Autologin 6. CRIAR O SCRIPT RESPONSÁVEL POR INICIAR O KIOSK MODE Criar o arquivo para o script">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">

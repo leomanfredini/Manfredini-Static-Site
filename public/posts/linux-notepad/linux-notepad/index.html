@@ -4,7 +4,7 @@
     <title>Linux Commands Notepad // ManfreDocs</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.134.1">
+    <meta name="generator" content="Hugo 0.136.2">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Leo Manfredini" />
     <meta name="description" content="" />
@@ -16,14 +16,14 @@
   <meta name="twitter:title" content="Linux Commands Notepad">
   <meta name="twitter:description" content="Compilação de comandos destinados a uma finalidade específica. grep Localizar conteúdos específicos dentro de arquivos sem a necessidade de abri-los.
 No exemplo abaixo, será executada uma busca pela sentença apache em todos os arquivos do diretório /etc apresentando uma listagem dos aquivos com esta sentença.
-grep -rli &#39;apache&#39; /etc/* ">
+grep -rli &#39;apache&#39; /etc/* ncdu Analisador de uso de disco com uma interface de usuário em modo texto. O Ncdu permite que você encontre facilmente os hogs de armazenamento em seu sistema, escaneando suas unidades e organizando os resultados com base nos maiores arquivos no topo da lista. Ele os divide por diretório e depois por arquivo para que você possa encontrar facilmente quais arquivos estão ocupando mais espaço. Então você pode excluí-los rapidamente diretamente se quiser.">
 
     <meta property="og:url" content="http://localhost:1313/posts/linux-notepad/linux-notepad/">
   <meta property="og:site_name" content="ManfreDocs">
   <meta property="og:title" content="Linux Commands Notepad">
   <meta property="og:description" content="Compilação de comandos destinados a uma finalidade específica. grep Localizar conteúdos específicos dentro de arquivos sem a necessidade de abri-los.
 No exemplo abaixo, será executada uma busca pela sentença apache em todos os arquivos do diretório /etc apresentando uma listagem dos aquivos com esta sentença.
-grep -rli &#39;apache&#39; /etc/* ">
+grep -rli &#39;apache&#39; /etc/* ncdu Analisador de uso de disco com uma interface de usuário em modo texto. O Ncdu permite que você encontre facilmente os hogs de armazenamento em seu sistema, escaneando suas unidades e organizando os resultados com base nos maiores arquivos no topo da lista. Ele os divide por diretório e depois por arquivo para que você possa encontrar facilmente quais arquivos estão ocupando mais espaço. Então você pode excluí-los rapidamente diretamente se quiser.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -102,6 +102,13 @@ grep -rli &#39;apache&#39; /etc/* ">
 No exemplo abaixo, será executada uma busca pela sentença <strong>apache</strong> em todos os arquivos do diretório <code>/etc</code> apresentando uma listagem dos aquivos com esta sentença.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>grep -rli <span style="color:#e6db74">&#39;apache&#39;</span> /etc/* 
 </span></span></code></pre></div><hr>
+<h3 id="ncdu">ncdu</h3>
+<p>Analisador de uso de disco com uma interface de usuário em modo texto. O Ncdu permite que você encontre facilmente os hogs de armazenamento em seu sistema, escaneando suas unidades e organizando os resultados com base nos maiores arquivos no topo da lista. Ele os divide por diretório e depois por arquivo para que você possa encontrar facilmente quais arquivos estão ocupando mais espaço. Então você pode excluí-los rapidamente diretamente se quiser.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ncdu
+</span></span></code></pre></div><p>O comando acima analisa o uso de disco na unidade /home do usuário logado</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo ncdu / --color<span style="color:#f92672">=</span>dark
+</span></span></code></pre></div><p>O comando acima analisa o uso de todo o disco a partir da raiz, com a opção de menus coloridos</p>
+<hr>
 
     </div>
     <div class="post-footer">
