@@ -37,10 +37,10 @@ theme = "m10c"
     icon = "github"
     name = "Github"
     url = "https://github.com/leomanfredini"
-  [[params.social]]
-    icon = "twitter"
-    name = "Twitter"
-    url = "https://twitter.com/leomanfredini"
+  #[[params.social]]
+  #  icon = "twitter"
+  #  name = "Twitter"
+  #  url = "https://twitter.com/leomanfredini"
 
   # Default theme
   #[params.style]
